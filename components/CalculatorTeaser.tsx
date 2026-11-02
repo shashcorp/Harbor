@@ -16,10 +16,12 @@ type ScenarioKey = keyof typeof SCENARIOS;
 
 const fmt = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
 
-function project(initial: number, years: number, annualRate: number) {
+/** Invests `yearly` at the start of each year, compounds monthly and deducts the monthly fee. */
+function project(yearly: number, years: number, annualRate: number) {
   const r = annualRate / 12;
-  let value = initial;
+  let value = 0;
   for (let m = 0; m < years * 12; m++) {
+    if (m % 12 === 0) value += yearly;
     const fee = m === 0 ? FIRST_MONTH_FEE : MONTHLY_FEE;
     value = Math.max(0, value * (1 + r) - fee);
   }
@@ -68,13 +70,13 @@ function NumberField({
 }
 
 export default function CalculatorTeaser() {
-  const [initial, setInitial] = useState(10000);
+  const [yearly, setYearly] = useState(10000);
   const [years, setYears] = useState(MAX_YEARS);
   const [scenario, setScenario] = useState<ScenarioKey>("balanced");
 
   const total = useMemo(
-    () => project(initial, years, SCENARIOS[scenario].rate),
-    [initial, years, scenario],
+    () => project(yearly, years, SCENARIOS[scenario].rate),
+    [yearly, years, scenario],
   );
 
   return (
@@ -95,7 +97,7 @@ export default function CalculatorTeaser() {
 
           <div className="bg-white p-6 shadow-[0_1px_0_var(--color-line)] sm:p-8">
             <div className="space-y-6">
-              <NumberField label="Investment amount" prefix="$" value={initial} onChange={setInitial} min={1000} max={100000} step={1000} />
+              <NumberField label="Yearly investment amount" prefix="$" value={yearly} onChange={setYearly} min={1000} max={100000} step={1000} />
               <NumberField label="Investment horizon (years)" value={years} onChange={setYears} min={1} max={MAX_YEARS} step={1} />
               <fieldset>
                 <legend className="text-sm text-muted">Market scenario</legend>
@@ -126,7 +128,7 @@ export default function CalculatorTeaser() {
               <p className="text-sm text-muted">Estimated value after {years} {years === 1 ? "year" : "years"}</p>
               <p className="mt-1 text-[2.25rem] font-light text-navy-900">{fmt.format(total)}</p>
               <p className="text-sm text-muted">
-                Invested: <span className="text-ink">{fmt.format(initial)}</span> · Assumed return{" "}
+                Total invested: <span className="text-ink">{fmt.format(yearly * years)}</span> · Assumed return{" "}
                 {SCENARIOS[scenario].rate * 100}% p.a.
               </p>
             </div>
