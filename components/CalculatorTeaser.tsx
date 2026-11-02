@@ -1,0 +1,142 @@
+"use client";
+
+import { useId, useMemo, useState } from "react";
+import Container from "./Container";
+import SectionHeading from "./SectionHeading";
+
+const FEE = 0.0075;
+const SCENARIOS = {
+  cautious: { label: "Cautious", rate: 0.03 },
+  balanced: { label: "Balanced", rate: 0.05 },
+  growth: { label: "Growth", rate: 0.07 },
+} as const;
+type ScenarioKey = keyof typeof SCENARIOS;
+
+const fmt = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
+
+function project(initial: number, monthly: number, years: number, annualRate: number) {
+  const r = (annualRate - FEE) / 12;
+  let value = initial;
+  for (let m = 0; m < years * 12; m++) value = value * (1 + r) + monthly;
+  return value;
+}
+
+function NumberField({
+  label,
+  value,
+  onChange,
+  min,
+  max,
+  step,
+  prefix,
+}: {
+  label: string;
+  value: number;
+  onChange: (n: number) => void;
+  min: number;
+  max: number;
+  step: number;
+  prefix?: string;
+}) {
+  const id = useId();
+  return (
+    <div>
+      <label htmlFor={id} className="flex justify-between text-sm text-muted">
+        <span>{label}</span>
+        <span className="font-semibold text-navy-900">
+          {prefix}
+          {value.toLocaleString("en-US")}
+        </span>
+      </label>
+      <input
+        id={id}
+        type="range"
+        min={min}
+        max={max}
+        step={step}
+        value={value}
+        onChange={(e) => onChange(Number(e.target.value))}
+        className="mt-2 w-full accent-[var(--color-accent)]"
+      />
+    </div>
+  );
+}
+
+export default function CalculatorTeaser() {
+  const [initial, setInitial] = useState(1000);
+  const [monthly, setMonthly] = useState(100);
+  const [years, setYears] = useState(10);
+  const [scenario, setScenario] = useState<ScenarioKey>("balanced");
+
+  const { total, paidIn } = useMemo(
+    () => ({
+      total: project(initial, monthly, years, SCENARIOS[scenario].rate),
+      paidIn: initial + monthly * years * 12,
+    }),
+    [initial, monthly, years, scenario],
+  );
+
+  return (
+    <section aria-labelledby="calc-title" className="pb-20 sm:pb-24">
+      <Container>
+        <div className="grid gap-12 bg-mist px-6 py-12 sm:px-12 lg:grid-cols-2 lg:gap-16 lg:py-16">
+          <div>
+            <SectionHeading id="calc-title">What could your investment be worth?</SectionHeading>
+            <p className="text-lg leading-relaxed text-ink">
+              Try different amounts, time horizons and market scenarios to see how regular investing can add up
+              over time.
+            </p>
+            <p className="mt-4 leading-relaxed text-muted">
+              Results are shown net of the 0.75% Harbor management fee. Hyperliquid trading and network costs
+              are not included.
+            </p>
+          </div>
+
+          <div className="bg-white p-6 shadow-[0_1px_0_var(--color-line)] sm:p-8">
+            <div className="space-y-6">
+              <NumberField label="Initial deposit" prefix="$" value={initial} onChange={setInitial} min={50} max={25000} step={50} />
+              <NumberField label="Monthly deposit" prefix="$" value={monthly} onChange={setMonthly} min={0} max={2000} step={25} />
+              <NumberField label="Investment horizon (years)" value={years} onChange={setYears} min={1} max={30} step={1} />
+              <fieldset>
+                <legend className="text-sm text-muted">Market scenario</legend>
+                <div className="mt-2 grid grid-cols-3 border border-line">
+                  {(Object.keys(SCENARIOS) as ScenarioKey[]).map((key) => (
+                    <label
+                      key={key}
+                      className={`cursor-pointer py-2 text-center text-sm transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-accent ${
+                        scenario === key ? "bg-navy-900 text-white" : "text-navy-900 hover:bg-mist"
+                      }`}
+                    >
+                      <input
+                        type="radio"
+                        name="scenario"
+                        value={key}
+                        checked={scenario === key}
+                        onChange={() => setScenario(key)}
+                        className="sr-only"
+                      />
+                      {SCENARIOS[key].label}
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+            </div>
+
+            <div className="mt-8 border-t border-line pt-6" aria-live="polite">
+              <p className="text-sm text-muted">Estimated value after {years} years</p>
+              <p className="mt-1 text-[2.25rem] font-light text-navy-900">{fmt.format(total)}</p>
+              <p className="text-sm text-muted">
+                Total deposited: <span className="text-ink">{fmt.format(paidIn)}</span> · Assumed return{" "}
+                {(SCENARIOS[scenario].rate * 100).toFixed(0)}% p.a.
+              </p>
+            </div>
+            <p className="mt-6 text-xs leading-relaxed text-muted">
+              Illustrative only. Not a forecast or guarantee of future returns. The value of investments can fall
+              as well as rise, and you may get back less than you invest.
+            </p>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}
