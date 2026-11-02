@@ -19,13 +19,11 @@ const fmt = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD",
 function project(initial: number, monthly: number, years: number, annualRate: number) {
   const r = annualRate / 12;
   let value = initial;
-  let fees = 0;
   for (let m = 0; m < years * 12; m++) {
     const fee = m === 0 ? FIRST_MONTH_FEE : MONTHLY_FEE;
-    fees += fee;
     value = Math.max(0, value * (1 + r) + monthly - fee);
   }
-  return { value, fees };
+  return value;
 }
 
 function NumberField({
@@ -75,10 +73,11 @@ export default function CalculatorTeaser() {
   const [years, setYears] = useState(MAX_YEARS);
   const [scenario, setScenario] = useState<ScenarioKey>("balanced");
 
-  const { total, fees, paidIn } = useMemo(() => {
-    const { value, fees } = project(initial, monthly, years, SCENARIOS[scenario].rate);
-    return { total: value, fees, paidIn: initial + monthly * years * 12 };
-  },
+  const { total, paidIn } = useMemo(
+    () => ({
+      total: project(initial, monthly, years, SCENARIOS[scenario].rate),
+      paidIn: initial + monthly * years * 12,
+    }),
     [initial, monthly, years, scenario],
   );
 
@@ -132,8 +131,7 @@ export default function CalculatorTeaser() {
               <p className="text-sm text-muted">Estimated value after {years} {years === 1 ? "year" : "years"}</p>
               <p className="mt-1 text-[2.25rem] font-light text-navy-900">{fmt.format(total)}</p>
               <p className="text-sm text-muted">
-                Total deposited: <span className="text-ink">{fmt.format(paidIn)}</span> · Harbor fees:{" "}
-                <span className="text-ink">{fmt.format(fees)}</span> · Assumed return{" "}
+                Total deposited: <span className="text-ink">{fmt.format(paidIn)}</span> · Assumed return{" "}
                 {(SCENARIOS[scenario].rate * 100).toFixed(0)}% p.a.
               </p>
             </div>
