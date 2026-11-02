@@ -44,8 +44,8 @@ function HarborArt() {
         <path d="M990 300V150l90 0M990 170l70-20M1060 150v40" />
         <path d="M1210 300V170h-70M1210 186l-56-16" />
       </g>
-      {/* lighthouse */}
-      <g>
+      {/* lighthouse — sits right of the text panel on desktop */}
+      <g transform="translate(130 0)">
         <path d="M600 300l10-110h20l10 110z" fill="#e9edf1" />
         <rect x="606" y="230" width="28" height="12" fill="#0e7f86" />
         <rect x="606" y="262" width="30" height="12" fill="#0e7f86" />
@@ -80,7 +80,7 @@ function HarborArt() {
 export default function Hero() {
   return (
     <section aria-labelledby="hero-title" className="lg:pt-0">
-      <Container className="px-0 sm:px-8">
+      <Container>
         <div className="relative overflow-hidden">
           <div className="relative h-56 sm:h-auto sm:min-h-[460px]">
             <HarborArt />
@@ -89,7 +89,7 @@ export default function Hero() {
             <div className="border-l-4 border-accent pl-6">
               <h1
                 id="hero-title"
-                className="text-[2.1rem] font-light leading-[1.15] tracking-[-0.015em] text-navy-900 sm:text-[2.75rem]"
+                className="text-[1.9rem] font-light leading-[1.15] tracking-[-0.015em] text-navy-900 sm:text-[2.75rem]"
               >
                 Managed investing on Hyperliquid, made easy
               </h1>
