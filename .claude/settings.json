@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "mcp__Vercel"
+      "mcp__Vercel",
+      "Edit",
+      "Write"
     ]
   }
 }
