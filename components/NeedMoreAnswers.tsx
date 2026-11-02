@@ -9,7 +9,7 @@ export default function NeedMoreAnswers() {
         <h2 id="more-title" className="text-2xl font-light text-navy-900 sm:text-[1.75rem]">
           Need more answers?
         </h2>
-        <a href="#" className={`${textLink} mt-4`}>
+        <a href="/#faq" className={`${textLink} mt-4`}>
           Visit the Harbor help centre <ChevronRight className="h-4 w-4 text-accent" />
         </a>
 
@@ -17,11 +17,11 @@ export default function NeedMoreAnswers() {
           <nav aria-label="Breadcrumb">
             <ol className="flex flex-wrap items-center gap-2">
               <li>
-                <a href="#" className="hover:text-navy-900">Harbor</a>
+                <a href="/" className="hover:text-navy-900">Harbor</a>
               </li>
               <li aria-hidden>/</li>
               <li>
-                <a href="#" className="hover:text-navy-900">Invest</a>
+                <a href="/" className="hover:text-navy-900">Invest</a>
               </li>
               <li aria-hidden>/</li>
               <li aria-current="page" className="text-navy-900">Managed investing</li>

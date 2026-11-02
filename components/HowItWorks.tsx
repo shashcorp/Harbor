@@ -22,9 +22,9 @@ export default function HowItWorks() {
             Get 50% off your first month when you open your account.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:gap-10">
-            <a href="#" className={textLink}>
+            <Link href="/invest/factsheet" className={textLink}>
               Harbor Invest factsheet <Document className="h-5 w-5 text-accent" />
-            </a>
+            </Link>
             <Link href="/funds" className={textLink}>
               Fund overview <ChevronRight className="h-4 w-4 text-accent" />
             </Link>
