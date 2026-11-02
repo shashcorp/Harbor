@@ -8,11 +8,10 @@ import Faq from "@/components/Faq";
 import NeedMoreAnswers from "@/components/NeedMoreAnswers";
 import Footer from "@/components/Footer";
 import StickyCta from "@/components/StickyCta";
-import { WalletModalProvider } from "@/components/WalletModal";
 
 export default function Home() {
   return (
-    <WalletModalProvider>
+    <>
       <Header />
       <main id="top">
         <Hero />
@@ -25,6 +24,6 @@ export default function Home() {
       </main>
       <Footer />
       <StickyCta />
-    </WalletModalProvider>
+    </>
   );
 }

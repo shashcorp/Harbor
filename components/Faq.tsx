@@ -29,7 +29,7 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
     q: "What does Harbor cost?",
     a: (
       <p>
-        Harbor Invest costs a flat $19 per month, whatever your balance, and your first month is 50% off ($9.50).
+        Harbor Invest costs a flat $19 per month, whatever your balance, and your first month is 50% off.
         There is no percentage-based fee. Hyperliquid trading fees and network costs are passed through at cost
         and shown before you confirm.
       </p>
