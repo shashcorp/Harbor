@@ -7,9 +7,9 @@ import Link from "next/link";
 import { Close, Help, Menu, Shield } from "./icons";
 
 const NAV = [
-  { label: "Invest", href: "#top", active: true },
-  { label: "Vaults", href: "#vaults", soon: true },
-  { label: "Private", href: "#private", soon: true },
+  { label: "Invest", href: "/", active: true },
+  { label: "Vaults", href: "/#vaults", soon: true },
+  { label: "Private", href: "/#private", soon: true },
 ];
 
 function SoonBadge() {
@@ -35,7 +35,7 @@ export default function Header() {
       <Container>
         <div className="flex h-[72px] items-center justify-between gap-6">
           <div className="flex h-full items-center gap-12">
-            <a href="#top" aria-label="Harbor home">
+            <a href="/" aria-label="Harbor home">
               <Logo />
             </a>
             <nav aria-label="Main" className="hidden h-full items-stretch gap-9 text-[0.95rem] text-ink md:flex">
@@ -63,7 +63,7 @@ export default function Header() {
               <Shield /> Security
             </a>
             <a
-              href="#faq"
+              href="/#faq"
               className="hidden items-center gap-2 border border-line px-3 py-1.5 text-sm text-navy-900 transition-colors hover:border-navy-900 lg:inline-flex"
             >
               <Help /> Help and contact
@@ -114,7 +114,7 @@ export default function Header() {
                 <Shield /> Security
               </a>
               <a
-                href="#faq"
+                href="/#faq"
                 onClick={() => setMobileOpen(false)}
                 className="inline-flex items-center gap-2 border border-line px-3 py-1.5 text-navy-900"
               >

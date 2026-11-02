@@ -1,6 +1,7 @@
 import Container from "./Container";
 import SectionHeading from "./SectionHeading";
-import { Document } from "./icons";
+import Link from "next/link";
+import { ChevronRight, Document } from "./icons";
 import { textLink } from "./ui";
 
 export default function HowItWorks() {
@@ -24,9 +25,9 @@ export default function HowItWorks() {
             <a href="#" className={textLink}>
               Harbor Invest factsheet <Document className="h-5 w-5 text-accent" />
             </a>
-            <a href="#" className={textLink}>
-              Fund overview <Document className="h-5 w-5 text-accent" />
-            </a>
+            <Link href="/funds" className={textLink}>
+              Fund overview <ChevronRight className="h-4 w-4 text-accent" />
+            </Link>
           </div>
         </div>
       </Container>
