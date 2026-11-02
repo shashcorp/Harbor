@@ -29,7 +29,11 @@ export default function StickyCta() {
         visible ? "translate-y-0" : "translate-y-full"
       }`}
     >
-      <div className="mx-auto max-w-[1100px] bg-mist px-5 py-5 shadow-[0_-8px_30px_rgba(11,31,58,0.12)] sm:px-10 sm:py-6">
+      <div
+        className={`mx-auto max-w-[1100px] bg-mist px-5 py-3 sm:px-10 sm:py-6 ${
+          visible ? "shadow-[0_-8px_30px_rgba(11,31,58,0.12)]" : ""
+        }`}
+      >
         <div className="flex items-center justify-between gap-4">
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
             <ConnectWalletButton className={btnPrimary}>
