@@ -1,0 +1,2262 @@
+{
+ "xyz": [
+  {
+   "name": "xyz:SKHX",
+   "vol24h": 282934733.16290003,
+   "oi_usd": 269409551.389,
+   "mark": "1099.3",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:XYZ100",
+   "vol24h": 171391755.03009996,
+   "oi_usd": 275421606.2964,
+   "mark": "28638.0",
+   "maxLev": 30
+  },
+  {
+   "name": "xyz:CL",
+   "vol24h": 166239242.48196203,
+   "oi_usd": 178765756.45235997,
+   "mark": "99.855",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:SP500",
+   "vol24h": 118240231.4044,
+   "oi_usd": 358670209.91,
+   "mark": "7614.5",
+   "maxLev": 50
+  },
+  {
+   "name": "xyz:SILVER",
+   "vol24h": 104177069.57794997,
+   "oi_usd": 220173119.70679992,
+   "mark": "50.245",
+   "maxLev": 25
+  },
+  {
+   "name": "xyz:SOXL",
+   "vol24h": 92186556.48843007,
+   "oi_usd": 30157339.531,
+   "mark": "81.295",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:BRENTOIL",
+   "vol24h": 92167305.31979999,
+   "oi_usd": 209841139.33200002,
+   "mark": "108.9",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:SNDK",
+   "vol24h": 79629713.29740001,
+   "oi_usd": 138239129.147,
+   "mark": "1179.5",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:SKHY",
+   "vol24h": 76666548.99029997,
+   "oi_usd": 116397881.20079999,
+   "mark": "155.88",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:MU",
+   "vol24h": 68970659.81141004,
+   "oi_usd": 97448750.1576,
+   "mark": "903.96",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:SPCX",
+   "vol24h": 45420515.885699995,
+   "oi_usd": 172490799.74420005,
+   "mark": "137.27",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:EWY",
+   "vol24h": 45341953.50280001,
+   "oi_usd": 13508192.71444,
+   "mark": "159.01",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:DRAM",
+   "vol24h": 44331381.418399975,
+   "oi_usd": 81739042.21440001,
+   "mark": "49.824",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:GOLD",
+   "vol24h": 42247121.78895997,
+   "oi_usd": 315088273.14480007,
+   "mark": "3904.8",
+   "maxLev": 25
+  },
+  {
+   "name": "xyz:GOOGL",
+   "vol24h": 40186274.02175001,
+   "oi_usd": 292920739.83528,
+   "mark": "283.16",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:INTC",
+   "vol24h": 39313979.599729985,
+   "oi_usd": 123873449.52969998,
+   "mark": "65.335",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:UNITREE",
+   "vol24h": 38749389.21412999,
+   "oi_usd": 30380476.63166,
+   "mark": "96.749",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:NVDA",
+   "vol24h": 25986182.233430002,
+   "oi_usd": 99991036.37064001,
+   "mark": "207.03",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:SMSN",
+   "vol24h": 25911947.87281,
+   "oi_usd": 40282901.1408,
+   "mark": "170.4",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:CXMT",
+   "vol24h": 19056030.857110005,
+   "oi_usd": 35903742.888399996,
+   "mark": "6.2785",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:KORU",
+   "vol24h": 17275417.827899996,
+   "oi_usd": 5630262.4554,
+   "mark": "11.891",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:KIOXIA",
+   "vol24h": 12595602.487558,
+   "oi_usd": 6621678.18624,
+   "mark": "72.145",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:AAPL",
+   "vol24h": 11244630.9032,
+   "oi_usd": 75472018.8768,
+   "mark": "343.98",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:LITE",
+   "vol24h": 10589798.43553001,
+   "oi_usd": 11136845.43012,
+   "mark": "919.07",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:CRCL",
+   "vol24h": 10265954.318969002,
+   "oi_usd": 111327634.7995,
+   "mark": "73.262",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:TSLA",
+   "vol24h": 9340055.392049998,
+   "oi_usd": 40111485.648,
+   "mark": "404.16",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:MRVL",
+   "vol24h": 8429289.634300001,
+   "oi_usd": 11132804.08,
+   "mark": "203.12",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:AMD",
+   "vol24h": 7753983.801269999,
+   "oi_usd": 16398770.20304,
+   "mark": "514.16",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:NBIS",
+   "vol24h": 7460240.809499997,
+   "oi_usd": 38742782.3568,
+   "mark": "157.48",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:ZHIPU",
+   "vol24h": 6819758.467947001,
+   "oi_usd": 16473441.506296,
+   "mark": "61.511",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:META",
+   "vol24h": 6816741.2053,
+   "oi_usd": 115069084.6734,
+   "mark": "612.3",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:AMZN",
+   "vol24h": 5939757.844570001,
+   "oi_usd": 24059261.81778,
+   "mark": "241.71",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:MSTR",
+   "vol24h": 5922900.521669999,
+   "oi_usd": 42809356.11385999,
+   "mark": "133.39",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:NATGAS",
+   "vol24h": 5215295.692659998,
+   "oi_usd": 12883962.498719998,
+   "mark": "2.9332",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:ANT",
+   "vol24h": 5202372.850499998,
+   "oi_usd": 43758833.3824,
+   "mark": "112.96",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:SNXX",
+   "vol24h": 4782169.9408100005,
+   "oi_usd": 1620077.9249800001,
+   "mark": "7.1191",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:COIN",
+   "vol24h": 4155040.23919,
+   "oi_usd": 16688820.8136,
+   "mark": "142.28",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:PLTR",
+   "vol24h": 3883825.4991200007,
+   "oi_usd": 6643993.723359999,
+   "mark": "186.76",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:CRWV",
+   "vol24h": 3661711.2762699993,
+   "oi_usd": 11151463.512640001,
+   "mark": "56.606",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:MSFT",
+   "vol24h": 3464220.366330001,
+   "oi_usd": 23338570.495679997,
+   "mark": "524.26",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:ORCL",
+   "vol24h": 3334034.4453099994,
+   "oi_usd": 13402384.729200002,
+   "mark": "132.27",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:EUR",
+   "vol24h": 3117597.538909999,
+   "oi_usd": 27842252.16864,
+   "mark": "1.1213",
+   "maxLev": 50
+  },
+  {
+   "name": "xyz:MRNA",
+   "vol24h": 3055781.2277999986,
+   "oi_usd": 18458219.0144,
+   "mark": "223.52",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:MINIMAX",
+   "vol24h": 2793427.332440001,
+   "oi_usd": 2094355.67624,
+   "mark": "21.557",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:HOOD",
+   "vol24h": 2570288.805512,
+   "oi_usd": 17007509.21613,
+   "mark": "85.885",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:BABA",
+   "vol24h": 2565142.2701639994,
+   "oi_usd": 11464252.681799999,
+   "mark": "101.35",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:BX",
+   "vol24h": 2453854.3388000005,
+   "oi_usd": 2325752.6952,
+   "mark": "118.36",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:JP225",
+   "vol24h": 2450115.8778899997,
+   "oi_usd": 2960843.79306,
+   "mark": "63247.0",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:HO",
+   "vol24h": 1951883.1560000002,
+   "oi_usd": 498612.0828,
+   "mark": "4.4967",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:COPPER",
+   "vol24h": 1822929.3392259998,
+   "oi_usd": 7861558.660053999,
+   "mark": "6.5263",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:PURRDAT",
+   "vol24h": 1565035.9360000002,
+   "oi_usd": 17395974.336,
+   "mark": "10.972",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:AAOI",
+   "vol24h": 1517401.1880400002,
+   "oi_usd": 3113350.93,
+   "mark": "73.1",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:GIGADEV",
+   "vol24h": 1508203.8167899996,
+   "oi_usd": 2189288.8274399997,
+   "mark": "39.897",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:CBRS",
+   "vol24h": 1472330.0789,
+   "oi_usd": 28404561.5388,
+   "mark": "110.26",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:BE",
+   "vol24h": 1429593.1132999996,
+   "oi_usd": 4031104.1124,
+   "mark": "208.49",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:KSTR",
+   "vol24h": 1388995.49312,
+   "oi_usd": 1534981.5504000003,
+   "mark": "17.449",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:EWZ",
+   "vol24h": 1321116.4677,
+   "oi_usd": 6943842.29162,
+   "mark": "32.561",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:HYUNDAI",
+   "vol24h": 1218396.9574299995,
+   "oi_usd": 1121855.01756,
+   "mark": "213.53",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:ARM",
+   "vol24h": 1194399.2182999996,
+   "oi_usd": 3889613.8304,
+   "mark": "211.37",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:IREN",
+   "vol24h": 1155237.2938000006,
+   "oi_usd": 4439074.0104,
+   "mark": "24.534",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:LLY",
+   "vol24h": 1138885.4501299995,
+   "oi_usd": 6268509.404359999,
+   "mark": "1412.6",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:KR200",
+   "vol24h": 1059016.0147539997,
+   "oi_usd": 1293619.2092040002,
+   "mark": "920.57",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:AVGO",
+   "vol24h": 1056798.6131,
+   "oi_usd": 10062011.381000001,
+   "mark": "328.43",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:RKLB",
+   "vol24h": 1047838.9528499999,
+   "oi_usd": 4994476.51728,
+   "mark": "55.784",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:BB",
+   "vol24h": 980532.2990499994,
+   "oi_usd": 7946782.9491,
+   "mark": "8.5513",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:JPY",
+   "vol24h": 971966.3271000001,
+   "oi_usd": 35621892.691,
+   "mark": "157.85",
+   "maxLev": 50
+  },
+  {
+   "name": "xyz:PLATINUM",
+   "vol24h": 959252.2237899998,
+   "oi_usd": 4764675.9474,
+   "mark": "1432.7",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:DELL",
+   "vol24h": 931175.7768000003,
+   "oi_usd": 4273687.6272,
+   "mark": "432.22",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:TSM",
+   "vol24h": 807041.6476299998,
+   "oi_usd": 7518466.887360001,
+   "mark": "413.92",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:NET",
+   "vol24h": 801898.3175000001,
+   "oi_usd": 2029256.544,
+   "mark": "285.6",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:JIO",
+   "vol24h": 749677.4325,
+   "oi_usd": 2172241.9677999998,
+   "mark": "14.347",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:EWJ",
+   "vol24h": 677392.7740470001,
+   "oi_usd": 1486487.0575160002,
+   "mark": "92.882",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:WDC",
+   "vol24h": 650236.92069,
+   "oi_usd": 2249177.8482000004,
+   "mark": "375.66",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:RDDT",
+   "vol24h": 481874.94645,
+   "oi_usd": 1379975.71152,
+   "mark": "92.166",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:STRC",
+   "vol24h": 460478.4944999999,
+   "oi_usd": 18477791.277,
+   "mark": "99.165",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:SOFTBANK",
+   "vol24h": 451608.037731,
+   "oi_usd": 1357490.26518,
+   "mark": "28.03",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:BOT",
+   "vol24h": 447646.3948400003,
+   "oi_usd": 2279466.5297,
+   "mark": "21.701",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:PALLADIUM",
+   "vol24h": 447138.6366590001,
+   "oi_usd": 2699518.361184,
+   "mark": "976.44",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:NFLX",
+   "vol24h": 415562.3585830001,
+   "oi_usd": 6180817.008978001,
+   "mark": "62.109",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:ASML",
+   "vol24h": 399820.0710999999,
+   "oi_usd": 1908362.9027999998,
+   "mark": "1589.1",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:CRWD",
+   "vol24h": 397052.7429,
+   "oi_usd": 1006543.2805999999,
+   "mark": "258.83",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:AMAT",
+   "vol24h": 344796.12634,
+   "oi_usd": 1058303.36616,
+   "mark": "398.49",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:GME",
+   "vol24h": 342275.9726099999,
+   "oi_usd": 2973478.20708,
+   "mark": "24.351",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:NOW",
+   "vol24h": 342173.2674,
+   "oi_usd": 5106967.376,
+   "mark": "105.7",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:TLT",
+   "vol24h": 317729.6312500002,
+   "oi_usd": 6669940.4205,
+   "mark": "81.515",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:USAR",
+   "vol24h": 289540.192061,
+   "oi_usd": 1819598.4324000003,
+   "mark": "9.81",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:IBM",
+   "vol24h": 242342.0696,
+   "oi_usd": 1153165.4784000001,
+   "mark": "257.92",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:SMH",
+   "vol24h": 241315.3045999999,
+   "oi_usd": 2731416.72214,
+   "mark": "531.47",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:SHEIN",
+   "vol24h": 226217.0528,
+   "oi_usd": 540109.2296,
+   "mark": "4.594",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:QCOM",
+   "vol24h": 217803.8989,
+   "oi_usd": 1423632.7590000003,
+   "mark": "166.55",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:LYTE",
+   "vol24h": 195655.55712,
+   "oi_usd": 302544.56018,
+   "mark": "18.097",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:BMNR",
+   "vol24h": 175704.16911,
+   "oi_usd": 3210227.63138,
+   "mark": "20.629",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:HIMS",
+   "vol24h": 136656.89602,
+   "oi_usd": 1853905.2404,
+   "mark": "28.034",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:XLE",
+   "vol24h": 129008.38024,
+   "oi_usd": 842095.4582999999,
+   "mark": "69.315",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:NOK",
+   "vol24h": 126652.318256,
+   "oi_usd": 1386313.3023999997,
+   "mark": "8.905",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:NCLD",
+   "vol24h": 122587.68533,
+   "oi_usd": 520298.521,
+   "mark": "15.622",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:RIVN",
+   "vol24h": 122114.86944,
+   "oi_usd": 976943.199,
+   "mark": "12.575",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:GLW",
+   "vol24h": 95048.27,
+   "oi_usd": 521120.8408,
+   "mark": "126.98",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:NIFTY",
+   "vol24h": 84087.0267,
+   "oi_usd": 127131.48240000001,
+   "mark": "23262.0",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:QNT",
+   "vol24h": 83569.42582,
+   "oi_usd": 1079618.25996,
+   "mark": "34.347",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:RELIANCE",
+   "vol24h": 73686.9966,
+   "oi_usd": 46304.856400000004,
+   "mark": "13.178",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:GBP",
+   "vol24h": 73111.284,
+   "oi_usd": 470363.796,
+   "mark": "1.341",
+   "maxLev": 50
+  },
+  {
+   "name": "xyz:EWT",
+   "vol24h": 70659.9245,
+   "oi_usd": 870493.952,
+   "mark": "102.8",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:ZM",
+   "vol24h": 62685.190239,
+   "oi_usd": 292099.328444,
+   "mark": "96.173",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:EBAY",
+   "vol24h": 60994.3693,
+   "oi_usd": 273999.62240000005,
+   "mark": "121.73",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:SHAZ",
+   "vol24h": 43149.19652,
+   "oi_usd": 1024572.6054400001,
+   "mark": "23.396",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:GEV",
+   "vol24h": 37623.63067,
+   "oi_usd": 658556.6664,
+   "mark": "869.91",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:CVX",
+   "vol24h": 34535.3712,
+   "oi_usd": 149073.1776,
+   "mark": "233.16",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:URNM",
+   "vol24h": 32855.44453,
+   "oi_usd": 1387992.1418599999,
+   "mark": "43.129",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:COST",
+   "vol24h": 31060.32421,
+   "oi_usd": 405323.76744,
+   "mark": "1010.6",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:XBI",
+   "vol24h": 24832.5283,
+   "oi_usd": 305953.61999999994,
+   "mark": "156.45",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:CAMBRICON",
+   "vol24h": 21210.7187,
+   "oi_usd": 17821.7668,
+   "mark": "128.51",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:MAGS",
+   "vol24h": 19207.19778,
+   "oi_usd": 205755.10723999998,
+   "mark": "68.987",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:ICE",
+   "vol24h": 17375.5564,
+   "oi_usd": 69048.6076,
+   "mark": "168.98",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:DKNG",
+   "vol24h": 15072.51629,
+   "oi_usd": 508670.26048,
+   "mark": "20.968",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:LRCX",
+   "vol24h": 13122.2966,
+   "oi_usd": 293231.895,
+   "mark": "244.25",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:BIRD",
+   "vol24h": 10159.58457,
+   "oi_usd": 70494.23212,
+   "mark": "1.9682",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:TWST",
+   "vol24h": 4022.6762,
+   "oi_usd": 85178.31300000001,
+   "mark": "156.09",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:UMC",
+   "vol24h": 3769.8295,
+   "oi_usd": 158761.6724,
+   "mark": "17.146",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:OURA",
+   "vol24h": 2193.3302,
+   "oi_usd": 787990.5852,
+   "mark": "48.594",
+   "maxLev": 5
+  },
+  {
+   "name": "xyz:URANIUM",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "85.0",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:ALUMINIUM",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "3080.0",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:DXY",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "97.15",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:VIX",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "20.0",
+   "maxLev": 3
+  },
+  {
+   "name": "xyz:CORN",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "4.61",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:WHEAT",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "6.3",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:TTF",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "57.0",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:VOL",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "15.0",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:KRW",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "1342.3",
+   "maxLev": 50
+  },
+  {
+   "name": "xyz:H100",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "2.6",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:IBOV",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "175000.0",
+   "maxLev": 20
+  },
+  {
+   "name": "xyz:IBIDEN",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "51.501",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:YMTC",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "10.0",
+   "maxLev": 5
+  },
+  {
+   "name": "xyz:ACN",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "256.0",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:INNOLIGHT",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "133.87",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:AMEC",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "47.51",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:CATL",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "51.88",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:SNAP",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "5.39",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:TTWO",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "193.01",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:MUU",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "25.077",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:NU",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "11.745",
+   "maxLev": 10
+  },
+  {
+   "name": "xyz:MELI",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "1624.53",
+   "maxLev": 10
+  }
+ ],
+ "flx": [
+  {
+   "name": "flx:TSLA",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "395.5",
+   "maxLev": 10
+  },
+  {
+   "name": "flx:NVDA",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "208.99",
+   "maxLev": 10
+  },
+  {
+   "name": "flx:CRCL",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "80.037",
+   "maxLev": 5
+  },
+  {
+   "name": "flx:COIN",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "164.78",
+   "maxLev": 10
+  },
+  {
+   "name": "flx:XMR",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "317.99",
+   "maxLev": 10
+  },
+  {
+   "name": "flx:GOLD",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "4153.2",
+   "maxLev": 25
+  },
+  {
+   "name": "flx:SILVER",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "65.65",
+   "maxLev": 25
+  },
+  {
+   "name": "flx:OIL",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "76.4",
+   "maxLev": 15
+  },
+  {
+   "name": "flx:GAS",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "3.2429",
+   "maxLev": 5
+  },
+  {
+   "name": "flx:BTC",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "91470.2",
+   "maxLev": 1
+  },
+  {
+   "name": "flx:COPPER",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "6.33",
+   "maxLev": 20
+  },
+  {
+   "name": "flx:PALLADIUM",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "1264.1",
+   "maxLev": 25
+  },
+  {
+   "name": "flx:PLATINUM",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "1658.2",
+   "maxLev": 25
+  },
+  {
+   "name": "flx:USDE",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "0.9984",
+   "maxLev": 20
+  },
+  {
+   "name": "flx:USA500",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "7435.0",
+   "maxLev": 30
+  },
+  {
+   "name": "flx:USA100",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "29530.0",
+   "maxLev": 30
+  }
+ ],
+ "vntl": [
+  {
+   "name": "vntl:SPACEX",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "2109.5",
+   "maxLev": 3
+  },
+  {
+   "name": "vntl:OPENAI",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "1336.2",
+   "maxLev": 3
+  },
+  {
+   "name": "vntl:ANTHROPIC",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "1619.3",
+   "maxLev": 3
+  },
+  {
+   "name": "vntl:MAG7",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "63.661",
+   "maxLev": 20
+  },
+  {
+   "name": "vntl:SEMIS",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "661.1",
+   "maxLev": 20
+  },
+  {
+   "name": "vntl:ROBOT",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "38.317",
+   "maxLev": 20
+  },
+  {
+   "name": "vntl:INFOTECH",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "191.3",
+   "maxLev": 20
+  },
+  {
+   "name": "vntl:NUCLEAR",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "128.05",
+   "maxLev": 20
+  },
+  {
+   "name": "vntl:DEFENSE",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "62.011",
+   "maxLev": 20
+  },
+  {
+   "name": "vntl:ENERGY",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "54.599",
+   "maxLev": 20
+  },
+  {
+   "name": "vntl:BIOTECH",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "140.88",
+   "maxLev": 20
+  },
+  {
+   "name": "vntl:GOLDJM",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "124.0",
+   "maxLev": 20
+  },
+  {
+   "name": "vntl:SILVERJM",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "31.5",
+   "maxLev": 20
+  },
+  {
+   "name": "vntl:WHEAT",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "611.42",
+   "maxLev": 10
+  },
+  {
+   "name": "vntl:SOY",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "1142.3",
+   "maxLev": 10
+  }
+ ],
+ "hyna": [
+  {
+   "name": "hyna:BTC",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "76888.0",
+   "maxLev": 40
+  },
+  {
+   "name": "hyna:ETH",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "2400.9",
+   "maxLev": 25
+  },
+  {
+   "name": "hyna:HYPE",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "81.5",
+   "maxLev": 10
+  },
+  {
+   "name": "hyna:SOL",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "98.311",
+   "maxLev": 20
+  },
+  {
+   "name": "hyna:LIT",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "3.37",
+   "maxLev": 3
+  },
+  {
+   "name": "hyna:ZEC",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "856.99",
+   "maxLev": 10
+  },
+  {
+   "name": "hyna:XRP",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "1.3608",
+   "maxLev": 20
+  },
+  {
+   "name": "hyna:LIGHTER",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "2.5774",
+   "maxLev": 5
+  },
+  {
+   "name": "hyna:BNB",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "685.89",
+   "maxLev": 10
+  },
+  {
+   "name": "hyna:DOGE",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "0.082257",
+   "maxLev": 10
+  },
+  {
+   "name": "hyna:SUI",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "0.72033",
+   "maxLev": 10
+  },
+  {
+   "name": "hyna:PUMP",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "0.004217",
+   "maxLev": 10
+  },
+  {
+   "name": "hyna:FARTCOIN",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "0.17364",
+   "maxLev": 10
+  },
+  {
+   "name": "hyna:ENA",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "0.1549",
+   "maxLev": 10
+  },
+  {
+   "name": "hyna:XMR",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "331.4",
+   "maxLev": 5
+  },
+  {
+   "name": "hyna:LTC",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "48.665",
+   "maxLev": 10
+  },
+  {
+   "name": "hyna:LINK",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "11.323",
+   "maxLev": 10
+  },
+  {
+   "name": "hyna:XPL",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "0.088667",
+   "maxLev": 10
+  },
+  {
+   "name": "hyna:IP",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "0.2947",
+   "maxLev": 3
+  },
+  {
+   "name": "hyna:BCH",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "236.67",
+   "maxLev": 10
+  },
+  {
+   "name": "hyna:ADA",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "0.1969",
+   "maxLev": 10
+  },
+  {
+   "name": "hyna:1000PEPE",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "0.003494",
+   "maxLev": 10
+  },
+  {
+   "name": "hyna:SILVER",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "85.97",
+   "maxLev": 25
+  },
+  {
+   "name": "hyna:GOLD",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "4993.2",
+   "maxLev": 25
+  },
+  {
+   "name": "hyna:BASED",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "0.069301",
+   "maxLev": 3
+  }
+ ],
+ "km": [
+  {
+   "name": "km:US500",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "750.97",
+   "maxLev": 25
+  },
+  {
+   "name": "km:BABA",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "116.54",
+   "maxLev": 10
+  },
+  {
+   "name": "km:EUR",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "1.1612",
+   "maxLev": 50
+  },
+  {
+   "name": "km:USBOND",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "86.038",
+   "maxLev": 10
+  },
+  {
+   "name": "km:SMALL2000",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "292.75",
+   "maxLev": 20
+  },
+  {
+   "name": "km:USTECH",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "733.79",
+   "maxLev": 25
+  },
+  {
+   "name": "km:USENERGY",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "58.247",
+   "maxLev": 15
+  },
+  {
+   "name": "km:USOIL",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "114.1",
+   "maxLev": 10
+  },
+  {
+   "name": "km:TSLA",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "386.5",
+   "maxLev": 12
+  },
+  {
+   "name": "km:SILVER",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "70.451",
+   "maxLev": 20
+  },
+  {
+   "name": "km:GOLD",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "4348.8",
+   "maxLev": 25
+  },
+  {
+   "name": "km:AAPL",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "292.11",
+   "maxLev": 15
+  },
+  {
+   "name": "km:GOOGL",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "358.55",
+   "maxLev": 15
+  },
+  {
+   "name": "km:SEMI",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "543.11",
+   "maxLev": 15
+  },
+  {
+   "name": "km:GLDMINE",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "73.889",
+   "maxLev": 10
+  },
+  {
+   "name": "km:NVDA",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "211.07",
+   "maxLev": 12
+  },
+  {
+   "name": "km:TENCENT",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "465.0",
+   "maxLev": 10
+  },
+  {
+   "name": "km:JPN225",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "56942.0",
+   "maxLev": 25
+  },
+  {
+   "name": "km:MU",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "1080.7",
+   "maxLev": 10
+  },
+  {
+   "name": "km:PLTR",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "130.51",
+   "maxLev": 12
+  },
+  {
+   "name": "km:XIAOMI",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "26.311",
+   "maxLev": 10
+  },
+  {
+   "name": "km:BMNR",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "15.749",
+   "maxLev": 10
+  },
+  {
+   "name": "km:RTX",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "181.52",
+   "maxLev": 10
+  }
+ ],
+ "cash": [
+  {
+   "name": "cash:USA500",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "7457.8",
+   "maxLev": 20
+  },
+  {
+   "name": "cash:TSLA",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "400.21",
+   "maxLev": 20
+  },
+  {
+   "name": "cash:NVDA",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "197.49",
+   "maxLev": 20
+  },
+  {
+   "name": "cash:HOOD",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "113.27",
+   "maxLev": 20
+  },
+  {
+   "name": "cash:GOOGL",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "359.53",
+   "maxLev": 20
+  },
+  {
+   "name": "cash:INTC",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "141.02",
+   "maxLev": 20
+  },
+  {
+   "name": "cash:AMZN",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "241.75",
+   "maxLev": 20
+  },
+  {
+   "name": "cash:MSFT",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "371.48",
+   "maxLev": 20
+  },
+  {
+   "name": "cash:META",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "622.67",
+   "maxLev": 20
+  },
+  {
+   "name": "cash:GOLD",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "4035.0",
+   "maxLev": 20
+  },
+  {
+   "name": "cash:SILVER",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "59.831",
+   "maxLev": 20
+  },
+  {
+   "name": "cash:EWY",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "199.56",
+   "maxLev": 20
+  },
+  {
+   "name": "cash:WTI",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "69.373",
+   "maxLev": 10
+  },
+  {
+   "name": "cash:BTC",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "70000.0",
+   "maxLev": 40
+  },
+  {
+   "name": "cash:KWEB",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "24.422",
+   "maxLev": 20
+  },
+  {
+   "name": "cash:ETH",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "2184.0",
+   "maxLev": 40
+  },
+  {
+   "name": "cash:CAR",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "150.83",
+   "maxLev": 10
+  }
+ ],
+ "para": [
+  {
+   "name": "para:UNITREE",
+   "vol24h": 1849006.7707599998,
+   "oi_usd": 2357204.06384,
+   "mark": "96.8315",
+   "maxLev": 10
+  },
+  {
+   "name": "para:10Y",
+   "vol24h": 485211.7140000001,
+   "oi_usd": 1573282.2415,
+   "mark": "4.9475",
+   "maxLev": 20
+  },
+  {
+   "name": "para:2Y",
+   "vol24h": 476324.53905,
+   "oi_usd": 1469825.23366,
+   "mark": "4.6403",
+   "maxLev": 20
+  },
+  {
+   "name": "para:CIFR",
+   "vol24h": 215320.969191,
+   "oi_usd": 142471.753632,
+   "mark": "7.3008",
+   "maxLev": 10
+  },
+  {
+   "name": "para:COHR",
+   "vol24h": 183786.4305,
+   "oi_usd": 1610859.812368,
+   "mark": "222.9823",
+   "maxLev": 10
+  },
+  {
+   "name": "para:TOTAL2",
+   "vol24h": 118783.4869,
+   "oi_usd": 476613.21119999996,
+   "mark": "1027.6",
+   "maxLev": 20
+  },
+  {
+   "name": "para:ANSEM",
+   "vol24h": 96006.737154,
+   "oi_usd": 251371.151304,
+   "mark": "0.044986",
+   "maxLev": 3
+  },
+  {
+   "name": "para:VST",
+   "vol24h": 76509.5937,
+   "oi_usd": 1080515.9556,
+   "mark": "139.89",
+   "maxLev": 10
+  },
+  {
+   "name": "para:TREAD",
+   "vol24h": 72997.44768,
+   "oi_usd": 255709.82551999998,
+   "mark": "0.82678",
+   "maxLev": 5
+  },
+  {
+   "name": "para:RDDT",
+   "vol24h": 71858.24943,
+   "oi_usd": 229280.7064,
+   "mark": "92.1176",
+   "maxLev": 10
+  },
+  {
+   "name": "para:SMCI",
+   "vol24h": 66598.25975,
+   "oi_usd": 158287.4484,
+   "mark": "33.585",
+   "maxLev": 10
+  },
+  {
+   "name": "para:IREN",
+   "vol24h": 59790.48324,
+   "oi_usd": 353245.9507,
+   "mark": "24.515",
+   "maxLev": 10
+  },
+  {
+   "name": "para:30Y",
+   "vol24h": 48082.47611,
+   "oi_usd": 355941.284,
+   "mark": "5.2999",
+   "maxLev": 20
+  },
+  {
+   "name": "para:CRWD",
+   "vol24h": 43272.7911,
+   "oi_usd": 166541.61520799997,
+   "mark": "258.7818",
+   "maxLev": 10
+  },
+  {
+   "name": "para:NET",
+   "vol24h": 40257.9873,
+   "oi_usd": 122318.1912,
+   "mark": "285.63",
+   "maxLev": 10
+  },
+  {
+   "name": "para:TTWO",
+   "vol24h": 36195.2279,
+   "oi_usd": 1389765.154172,
+   "mark": "192.7841",
+   "maxLev": 10
+  },
+  {
+   "name": "para:CRDO",
+   "vol24h": 34534.8764,
+   "oi_usd": 791936.91331,
+   "mark": "155.9023",
+   "maxLev": 10
+  },
+  {
+   "name": "para:AAOI",
+   "vol24h": 30276.3097,
+   "oi_usd": 173915.3628,
+   "mark": "72.86",
+   "maxLev": 10
+  },
+  {
+   "name": "para:SMH",
+   "vol24h": 15546.76028,
+   "oi_usd": 134411.09045,
+   "mark": "531.475",
+   "maxLev": 10
+  },
+  {
+   "name": "para:OTHERS",
+   "vol24h": 14681.1044,
+   "oi_usd": 343342.426448,
+   "mark": "195.1652",
+   "maxLev": 10
+  },
+  {
+   "name": "para:MELI",
+   "vol24h": 14056.3671,
+   "oi_usd": 183802.516492,
+   "mark": "1638.227",
+   "maxLev": 10
+  },
+  {
+   "name": "para:DRV",
+   "vol24h": 13869.29625,
+   "oi_usd": 260969.24804,
+   "mark": "0.31777",
+   "maxLev": 5
+  },
+  {
+   "name": "para:TER",
+   "vol24h": 9922.5805,
+   "oi_usd": 126456.12,
+   "mark": "280.08",
+   "maxLev": 10
+  },
+  {
+   "name": "para:BTCD",
+   "vol24h": 8331.4303,
+   "oi_usd": 483985.77499999997,
+   "mark": "60.385",
+   "maxLev": 20
+  },
+  {
+   "name": "para:ANTH",
+   "vol24h": 7402.34473,
+   "oi_usd": 120846.02992,
+   "mark": "112.52",
+   "maxLev": 10
+  },
+  {
+   "name": "para:CIEN",
+   "vol24h": 6902.0001,
+   "oi_usd": 159665.008848,
+   "mark": "330.4052",
+   "maxLev": 10
+  },
+  {
+   "name": "para:GDX",
+   "vol24h": 6203.4449,
+   "oi_usd": 70487.6186,
+   "mark": "78.29",
+   "maxLev": 10
+  },
+  {
+   "name": "para:SOFI",
+   "vol24h": 4211.10061,
+   "oi_usd": 92783.9595,
+   "mark": "16.985",
+   "maxLev": 10
+  },
+  {
+   "name": "para:GLW",
+   "vol24h": 3961.9211,
+   "oi_usd": 773903.870418,
+   "mark": "126.5943",
+   "maxLev": 10
+  },
+  {
+   "name": "para:STX",
+   "vol24h": 3922.78889,
+   "oi_usd": 198822.6656,
+   "mark": "660.4",
+   "maxLev": 10
+  },
+  {
+   "name": "para:LRCX",
+   "vol24h": 1220.9409,
+   "oi_usd": 199003.011624,
+   "mark": "244.2474",
+   "maxLev": 10
+  },
+  {
+   "name": "para:AVGO",
+   "vol24h": 720.5182,
+   "oi_usd": 270391.1048,
+   "mark": "328.28",
+   "maxLev": 10
+  },
+  {
+   "name": "para:IGV",
+   "vol24h": 506.7957,
+   "oi_usd": 129319.11424,
+   "mark": "105.6805",
+   "maxLev": 10
+  },
+  {
+   "name": "para:H100",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "2.56",
+   "maxLev": 10
+  },
+  {
+   "name": "para:NAVER",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "146.0",
+   "maxLev": 10
+  },
+  {
+   "name": "para:TENCENT",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "61.0",
+   "maxLev": 10
+  },
+  {
+   "name": "para:CAMBRICON",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "178.0",
+   "maxLev": 10
+  },
+  {
+   "name": "para:INNOLIGHT",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "157.0",
+   "maxLev": 10
+  },
+  {
+   "name": "para:PAPER",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "0.0259",
+   "maxLev": 3
+  }
+ ],
+ "mkts": [
+  {
+   "name": "mkts:BVIV",
+   "vol24h": 123781.64157,
+   "oi_usd": 88956.11496,
+   "mark": "40.252",
+   "maxLev": 5
+  },
+  {
+   "name": "mkts:US500",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "769.85",
+   "maxLev": 25
+  },
+  {
+   "name": "mkts:BABA",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "116.54",
+   "maxLev": 10
+  },
+  {
+   "name": "mkts:EUR",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "1.1612",
+   "maxLev": 50
+  },
+  {
+   "name": "mkts:USBOND",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "81.33",
+   "maxLev": 10
+  },
+  {
+   "name": "mkts:SMALL2000",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "281.54",
+   "maxLev": 20
+  },
+  {
+   "name": "mkts:USTECH",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "716.52",
+   "maxLev": 25
+  },
+  {
+   "name": "mkts:USENERGY",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "58.247",
+   "maxLev": 15
+  },
+  {
+   "name": "mkts:USOIL",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "114.1",
+   "maxLev": 10
+  },
+  {
+   "name": "mkts:TSLA",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "386.5",
+   "maxLev": 12
+  },
+  {
+   "name": "mkts:SILVER",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "70.451",
+   "maxLev": 20
+  },
+  {
+   "name": "mkts:GOLD",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "4348.8",
+   "maxLev": 25
+  },
+  {
+   "name": "mkts:AAPL",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "292.11",
+   "maxLev": 15
+  },
+  {
+   "name": "mkts:GOOGL",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "358.55",
+   "maxLev": 15
+  },
+  {
+   "name": "mkts:SEMI",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "543.11",
+   "maxLev": 15
+  },
+  {
+   "name": "mkts:GLDMINE",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "73.889",
+   "maxLev": 10
+  },
+  {
+   "name": "mkts:NVDA",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "211.07",
+   "maxLev": 12
+  },
+  {
+   "name": "mkts:TENCENT",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "465.0",
+   "maxLev": 10
+  },
+  {
+   "name": "mkts:JPN225",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "56942.0",
+   "maxLev": 25
+  },
+  {
+   "name": "mkts:MU",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "1080.7",
+   "maxLev": 10
+  },
+  {
+   "name": "mkts:PLTR",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "130.51",
+   "maxLev": 12
+  },
+  {
+   "name": "mkts:XIAOMI",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "26.311",
+   "maxLev": 10
+  },
+  {
+   "name": "mkts:BMNR",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "15.749",
+   "maxLev": 10
+  },
+  {
+   "name": "mkts:RTX",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "181.52",
+   "maxLev": 10
+  }
+ ],
+ "io": [
+  {
+   "name": "io:ANTH",
+   "vol24h": 17341316.472200014,
+   "oi_usd": 82664337.651,
+   "mark": "1788.5",
+   "maxLev": 15
+  },
+  {
+   "name": "io:SNDK",
+   "vol24h": 10464945.920660013,
+   "oi_usd": 5559414.81418,
+   "mark": "1177.1",
+   "maxLev": 15
+  },
+  {
+   "name": "io:DRAM",
+   "vol24h": 1781474.2737900007,
+   "oi_usd": 1007589.7350000001,
+   "mark": "49.75",
+   "maxLev": 25
+  },
+  {
+   "name": "io:NVDA",
+   "vol24h": 1258710.82531,
+   "oi_usd": 588884.83054,
+   "mark": "206.87",
+   "maxLev": 25
+  },
+  {
+   "name": "io:OAI",
+   "vol24h": 1063822.122,
+   "oi_usd": 6655397.024799999,
+   "mark": "1407.8",
+   "maxLev": 6
+  },
+  {
+   "name": "io:PRL",
+   "vol24h": 850200.44755,
+   "oi_usd": 8155257.681620002,
+   "mark": "1.5617",
+   "maxLev": 3
+  },
+  {
+   "name": "io:NBIS",
+   "vol24h": 705462.5453000002,
+   "oi_usd": 7340557.5672,
+   "mark": "157.24",
+   "maxLev": 15
+  },
+  {
+   "name": "io:EWY",
+   "vol24h": 357603.4614,
+   "oi_usd": 259714.31759999998,
+   "mark": "158.94",
+   "maxLev": 25
+  },
+  {
+   "name": "io:TCNT",
+   "vol24h": 115697.403813,
+   "oi_usd": 229677.545712,
+   "mark": "49.992",
+   "maxLev": 10
+  },
+  {
+   "name": "io:XIAOMI",
+   "vol24h": 30601.524104,
+   "oi_usd": 100772.50176,
+   "mark": "3.6222",
+   "maxLev": 10
+  },
+  {
+   "name": "io:IONQ",
+   "vol24h": 28436.06998,
+   "oi_usd": 161084.76124,
+   "mark": "30.493",
+   "maxLev": 10
+  },
+  {
+   "name": "io:GPRO",
+   "vol24h": 8548.596924,
+   "oi_usd": 224224.756812,
+   "mark": "0.93981",
+   "maxLev": 5
+  },
+  {
+   "name": "io:SBE",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "50.0",
+   "maxLev": 6
+  },
+  {
+   "name": "io:H100",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "2.78",
+   "maxLev": 10
+  },
+  {
+   "name": "io:MOONSHOT",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "67.24",
+   "maxLev": 6
+  },
+  {
+   "name": "io:SKHX",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "942.5",
+   "maxLev": 25
+  },
+  {
+   "name": "io:AAPL",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "344.19",
+   "maxLev": 25
+  },
+  {
+   "name": "io:CRCL",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "72.679",
+   "maxLev": 10
+  }
+ ],
+ "abcd": [
+  {
+   "name": "abcd:USA500",
+   "vol24h": 0.0,
+   "oi_usd": 0.0,
+   "mark": "6980.0",
+   "maxLev": 25
+  }
+ ]
+}

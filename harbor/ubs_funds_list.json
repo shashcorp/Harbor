@@ -1,0 +1,290 @@
+[
+ {
+  "name": "UBS (Lux) Strategy Fund - Fixed Income (CHF) Q-acc (UBF)",
+  "isin": "LU1240799699",
+  "short": "Focus Global Fixed Income",
+  "theme": "GlobalSustainability",
+  "style": "Actively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/lu1240799699-ubs-stgy-fd-fixed-income-sust-chf-q-acc-pd001.html"
+ },
+ {
+  "name": "UBS (Lux) Strategy SICAV - Income (CHF) Q-acc (UBF)",
+  "isin": "LU1240800968",
+  "short": "Focus Global Income",
+  "theme": "GlobalSustainability",
+  "style": "Actively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/lu1240800968-ubs-stgy-sicav-income-sust-chf-q-acc-pd001.html"
+ },
+ {
+  "name": "UBS (CH) Equity Fund - Mid Caps Switzerland (CHF) QL",
+  "isin": "CH0560899525",
+  "short": "Stocks - Switzerland",
+  "theme": "Switzerland",
+  "style": "Actively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/ch0560899525-ubs-mid-caps-switzerland-ql-pd001.html"
+ },
+ {
+  "name": "UBS (Lux) Strategy Fund - Yield (CHF) Q-acc",
+  "isin": "LU0941351768",
+  "short": "Focus - Global Yield",
+  "theme": "GlobalSustainability",
+  "style": "Actively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/lu0941351768-ubs-stgy-fd-yield-sustainable-chf-q-acc-pd001.html"
+ },
+ {
+  "name": "UBS (Lux) Strategy Fund - Balanced (CHF) Q-acc",
+  "isin": "LU0941351099",
+  "short": "Focus - Global Balanced",
+  "theme": "GlobalSustainability",
+  "style": "Actively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/lu0941351099-ubs-stgy-fd-balanced-sust-chf-q-acc-pd001.html"
+ },
+ {
+  "name": "UBS (Lux) Strategy Fund - Growth (CHF) Q-acc",
+  "isin": "LU0941351412",
+  "short": "Focus - Global Growth",
+  "theme": "GlobalSustainability",
+  "style": "Actively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/lu0941351412-ubs-stgy-fd-growth-sustainable-chf-q-acc-pd001.html"
+ },
+ {
+  "name": "UBS (Lux) Strategy Fund - Equity (CHF) Q-acc",
+  "isin": "LU1240799343",
+  "short": "Focus - Global Equities",
+  "theme": "GlobalSustainability",
+  "style": "Actively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/lu1240799343-ubs-stgy-fd-equity-sustainable-chf-q-acc-pd001.html"
+ },
+ {
+  "name": "UBS (CH) Vitainvest - Passive 25 Sustainable Q",
+  "isin": "CH1110134124",
+  "short": "Focus - Passive Yield",
+  "theme": "GlobalSustainability",
+  "style": "Passively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/ch1110134124-ubs-vitainvest-passive-25-si-q-pd001.html"
+ },
+ {
+  "name": "UBS (CH) Vitainvest - Passive 50 Sustainable Q",
+  "isin": "CH1110134132",
+  "short": "Focus - Passive Balanced",
+  "theme": "GlobalSustainability",
+  "style": "Passively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/ch1110134132-ubs-vitainvest-passive-50-si-q-pd001.html"
+ },
+ {
+  "name": "UBS (CH) Vitainvest - Passive 75 Sustainable Q",
+  "isin": "CH1110134140",
+  "short": "Focus - Passive Growth",
+  "theme": "GlobalSustainability",
+  "style": "Passively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/ch1110134140-ubs-vitainvest-passive-75-si-q-pd001.html"
+ },
+ {
+  "name": "UBS (CH) Vitainvest - Passive 100 Sustainable Q",
+  "isin": "CH1110134157",
+  "short": "Focus - Passive Equities",
+  "theme": "GlobalSustainability",
+  "style": "Passively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/ch1110134157-ubs-vitainvest-passive-100-si-q-pd001.html"
+ },
+ {
+  "name": "UBS (CH) Suisse - 25 (CHF) Q-dist",
+  "isin": "CH0210193519",
+  "short": "Focus - Switzerland Yield",
+  "theme": "Switzerland",
+  "style": "Actively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/ch0210193519-ubs-suisse-25-q-dist-pd001.html"
+ },
+ {
+  "name": "UBS (CH) Suisse - 45 (CHF) Q-dist",
+  "isin": "CH0210193535",
+  "short": "Focus - Switzerland Balanced",
+  "theme": "Switzerland",
+  "style": "Actively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/ch0210193535-ubs-suisse-45-q-dist-pd001.html"
+ },
+ {
+  "name": "UBS (CH) Suisse - 65 (CHF) Q-dist",
+  "isin": "CH0210193584",
+  "short": "Focus - Switzerland Growth",
+  "theme": "Switzerland",
+  "style": "Actively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/ch0210193584-ubs-suisse-65-q-dist-pd001.html"
+ },
+ {
+  "name": "UBS (Lux) Equity SICAV - Long Term Themes (USD) (CHF hedged) Q-acc",
+  "isin": "LU1323611423",
+  "short": "Long-term trends",
+  "theme": "Global SustainabilityMegatrends",
+  "style": "Actively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/lu1323611423-ubs-equity-long-term-themes-chf-hedged-q-acc-pd001.html"
+ },
+ {
+  "name": "UBS (Lux) Key Selection SICAV - Digital Transformation Themes (USD) (CHF hedged) Q-acc",
+  "isin": "LU2054466995",
+  "short": "Digital transformation",
+  "theme": "Global Digitalization Megatrends",
+  "style": "Actively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/lu2054466995-ubs-digital-transformation-themes-chf-hedged-q-acc-pd001.html"
+ },
+ {
+  "name": "UBS (Lux) Equity SICAV - Active Climate Aware (USD) (CHF hedged) Q-acc",
+  "isin": "LU2408499411",
+  "short": "Climate awareness",
+  "theme": "GlobalSustainability",
+  "style": "Actively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/lu2408499411-ubs-active-climate-aware-chf-hedged-q-acc-pd001.html"
+ },
+ {
+  "name": "UBS 100 Index-Fund Switzerland (CHF) Q",
+  "isin": "CH0203277022",
+  "short": "Stocks - Switzerland",
+  "theme": "Switzerland",
+  "style": "Passively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/ch0203277022-ubs-100-index-switzerland-q-pd001.html"
+ },
+ {
+  "name": "UBS (CH) Equity Fund - Swiss High Dividend (CHF) Q-acc",
+  "isin": "CH1391066490",
+  "short": "High-yield stocks - Switzerland",
+  "theme": "Switzerland High dividend",
+  "style": "Actively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/ch1391066490-ubs-swiss-high-dividend-ql-pd001.html"
+ },
+ {
+  "name": "UBS (Lux) Equity Fund - Sustainable Health Transformation (USD) (CHF hedged) Q-acc",
+  "isin": "LU2402148659",
+  "short": "Health section transformation",
+  "theme": "Global SustainabilityMegatrends",
+  "style": "Actively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/lu2402148659-ubs-equity-sust-health-transformation-chf-hedged-q-acc-pd001.html"
+ },
+ {
+  "name": "UBS (Lux) Equity SICAV - Global High Dividend (USD) (CHF hedged) QL-dist",
+  "isin": "LU2049075521",
+  "short": "High-yield stocks - Global",
+  "theme": "GlobalSustainabilityHigh Dividend",
+  "style": "Actively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/lu2049075521-ubs-global-highdiv-sustainable-usd-chf-hedged-ql-dist-pd001.html"
+ },
+ {
+  "name": "UBS (Lux) Equity SICAV - European Income Opportunity (EUR) (CHF hedged) Q-acc",
+  "isin": "LU2464499966",
+  "short": "Stocks - Europe",
+  "theme": "EuropeSustainability",
+  "style": "Actively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/lu2464499966-ubs-european-income-opportunity-sustainable-chf-hedged-q-acc-pd001.html"
+ },
+ {
+  "name": "UBS (Lux) Equity SICAV - US Income (USD) (CHF hedged) QL-acc",
+  "isin": "LU2049085249",
+  "short": "Focus US Income",
+  "theme": "USSustainability",
+  "style": "Actively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/asset-class/lu2049085249-ubs-us-income-sustainable-equity-fund-usd-chf-hedged-ql-acc-pd001.html"
+ },
+ {
+  "name": "UBS ETF (CH) - SMI\u00ae",
+  "isin": "CH1447931341",
+  "short": "Switzerland - Large Cap ETF",
+  "theme": "Switzerland",
+  "style": "Passively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/etf/ch1447931341-ubs-smi-etf-pd001.html"
+ },
+ {
+  "name": "UBS Core - SPI\u00ae ETF",
+  "isin": "CH1416135338",
+  "short": "Switzerland Total Market ETF",
+  "theme": "Switzerland",
+  "style": "Passively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/etf/ch1416135338-ubs-etf-ch-spi--pd001.html"
+ },
+ {
+  "name": "UBS Core S&P 500 UCITS ETF",
+  "isin": "IE00BD34DB16",
+  "short": "US Large Cap ETF",
+  "theme": "US",
+  "style": "Passively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/etf/ie00bd34db16-ubs-etf-ie-s-p-500-ucits-etf-pd001.html"
+ },
+ {
+  "name": "UBS (Lux) Fund Solutions - MSCI Europe UCITS ETF (hedged to CHF) A-acc",
+  "isin": "LU1589327680",
+  "short": "Europe Large Cap ETF",
+  "theme": "Europe",
+  "style": "Passively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/etf/lu1589327680-ubs-core-msci-europe-ucits-etf-pd001.html"
+ },
+ {
+  "name": "UBS ETF (CH) \u2013 MSCI Switzerland IMI Dividend ScreenedISN: CH1416135353",
+  "isin": null,
+  "short": "Switzerland High Dividend ETF",
+  "theme": "SwitzerlandHigh Dividends",
+  "style": "Passively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/etf/ch1416135353-ubs-msci-switzerland-imi-dividend-screened-etf-pd001.html"
+ },
+ {
+  "name": "UBS MSCI World Socially Responsible UCITS ETF",
+  "isin": "IE00BK72HT65",
+  "short": "Global Socially Responsible ETF",
+  "theme": "GlobalSustainability",
+  "style": "Passively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/etf/ie00bk72ht65-ubs-etf-ie-msci-world-socially-responsible-ucits-etf-pd001.html"
+ },
+ {
+  "name": "UBS ETF (CH) - SPI\u00ae ESG",
+  "isin": "CH1416135346",
+  "short": "Switzerland Total Market ESG ETF",
+  "theme": "SwitzerlandSustainability",
+  "style": "Passively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/etf/ch1416135346-ubs-etf-ch-spi-esg-pd001.html"
+ },
+ {
+  "name": "UBS ETF (IE) S&P 500 Scored & Screened UCITS ETFISN: IE00BHXMHN35",
+  "isin": null,
+  "short": "US Scored & Screened Large Cap ETF",
+  "theme": "USSustainability",
+  "style": "Passively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/etf/ie00bhxmhn35-ubs-etf-ie-s-p-500-scored-screened-ucits-etf-pd001.html"
+ },
+ {
+  "name": "UBS Core MSCI World UCITS ETF",
+  "isin": "IE000N6LBS91",
+  "short": "Global Large Cap ETF",
+  "theme": "Global",
+  "style": "Passively managed",
+  "ccy": "CHF",
+  "href": "/ch/en/assetmanagement/funds/etf/ie000n6lbs91-ubs-core-msci-world-ucits-etf-pd001.html"
+ }
+]
