@@ -10,8 +10,8 @@ const BENEFITS = [
   },
   {
     Icon: IconBaskets,
-    title: "Choose funds and themes",
-    body: "Pick from diversified core baskets or focused themes, each with clear rules and public holdings.",
+    title: "Choose funds and ETFs",
+    body: "Combine as many funds and ETFs as you like – diversified core holdings or focused themes, with no limit.",
   },
   {
     Icon: IconRecurring,

@@ -49,9 +49,11 @@ export function WalletModalProvider({ children }: { children: React.ReactNode })
         <div className="flex items-start justify-between border-b border-line px-7 py-6">
           <div>
             <h2 id="wallet-modal-title" className="text-xl font-normal text-navy-900">
-              Connect your wallet
+              Open your Harbor account
             </h2>
-            <p className="mt-1 text-sm text-muted">Harbor never takes custody of your keys.</p>
+            <p className="mt-1 text-sm text-muted">
+              Start by connecting a self-custody wallet. Harbor never takes custody of your keys.
+            </p>
           </div>
           <button onClick={close} className="-mr-2 p-2 text-muted hover:text-navy-900" aria-label="Close">
             <Close />
@@ -80,7 +82,7 @@ export function WalletModalProvider({ children }: { children: React.ReactNode })
           ))}
         </ul>
         <p className="border-t border-line bg-mist px-7 py-4 text-xs leading-relaxed text-muted">
-          Preview only — wallet connection is not live on this page. By connecting you agree to the Harbor Terms
+          Preview only — account opening is not live on this page. By continuing you agree to the Harbor Terms
           and acknowledge the risks of investing on Hyperliquid.
         </p>
       </dialog>
@@ -88,7 +90,7 @@ export function WalletModalProvider({ children }: { children: React.ReactNode })
   );
 }
 
-export function ConnectWalletButton({
+export function OpenAccountButton({
   className,
   children,
 }: {

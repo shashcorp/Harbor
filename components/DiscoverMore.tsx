@@ -48,55 +48,85 @@ function AdvisorArt() {
   );
 }
 
+function SoonBadge() {
+  return (
+    <span className="self-start bg-accent-50 px-2 py-1 text-xs font-semibold uppercase tracking-wide text-accent-600">
+      Coming soon
+    </span>
+  );
+}
+
+function Bullets({ items }: { items: string[] }) {
+  return (
+    <ul className="mt-4 space-y-2.5">
+      {items.map((b) => (
+        <li key={b} className="flex gap-4">
+          <span aria-hidden className="mt-[0.6em] h-1.5 w-1.5 shrink-0 rounded-full bg-navy-900" />
+          {b}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export default function DiscoverMore() {
   return (
     <section aria-labelledby="discover-title" className="pb-20 sm:pb-24">
       <Container>
-        <SectionHeading id="discover-title">Discover more</SectionHeading>
+        <SectionHeading id="discover-title">Coming soon to Harbor</SectionHeading>
         <div className="space-y-5">
-          <article className="grid gap-8 bg-mist p-6 sm:p-12 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:gap-10">
+          <article
+            id="private"
+            aria-labelledby="private-title"
+            className="grid gap-8 bg-mist p-6 sm:p-12 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:gap-10"
+          >
             <div className="aspect-[16/9] overflow-hidden md:aspect-auto md:min-h-[240px]">
-              <VaultArt />
+              <AdvisorArt />
             </div>
             <div className="flex flex-col justify-center">
-              <h3 className="text-2xl font-normal text-navy-900">Prefer to pick positions yourself?</h3>
+              <SoonBadge />
+              <h3 id="private-title" className="mt-4 text-2xl font-normal text-navy-900">
+                Harbor Private: a portfolio built to your specifications
+              </h3>
               <p className="mt-3 leading-relaxed text-ink">
-                With Harbor Vaults you trade self-directed on Hyperliquid while keeping Harbor&apos;s research,
-                risk limits and reporting at your side.
+                Tell Harbor&apos;s AI assistants what you want – your goals, risk appetite, themes to include or
+                avoid – and they build and maintain a portfolio around it.
               </p>
+              <Bullets
+                items={[
+                  "Describe your goals and preferences in plain language",
+                  "AI assistants design, explain and rebalance your portfolio",
+                  "Adjust your specifications at any time",
+                ]}
+              />
               <div className="mt-8">
                 <a href="#" className={btnOutline}>
-                  Explore Harbor Vaults <ChevronRight />
+                  Join the waitlist <ChevronRight />
                 </a>
               </div>
             </div>
           </article>
 
-          <article className="grid gap-8 bg-mist p-6 sm:p-12 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:gap-10">
+          <article
+            id="vaults"
+            aria-labelledby="vaults-title"
+            className="grid gap-8 bg-mist p-6 sm:p-12 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:gap-10"
+          >
             <div className="aspect-[16/9] overflow-hidden md:aspect-auto md:min-h-[240px]">
-              <AdvisorArt />
+              <VaultArt />
             </div>
             <div className="flex flex-col justify-center">
-              <h3 className="text-2xl font-normal text-navy-900">Would you prefer personal guidance?</h3>
+              <SoonBadge />
+              <h3 id="vaults-title" className="mt-4 text-2xl font-normal text-navy-900">
+                Harbor Vaults: pick positions yourself
+              </h3>
               <p className="mt-3 leading-relaxed text-ink">
-                Harbor Private may be a better fit. Work with a dedicated specialist to define your goals and a
-                portfolio tailored to you.
+                Trade self-directed on Hyperliquid while keeping Harbor&apos;s research, risk limits and reporting
+                at your side.
               </p>
-              <ul className="mt-4 space-y-2.5">
-                {[
-                  "Individual guidance, including a risk profile",
-                  "Calls by video at a time that suits you",
-                  "Ideal for larger portfolios or more complex needs",
-                ].map((b) => (
-                  <li key={b} className="flex gap-4">
-                    <span aria-hidden className="mt-[0.6em] h-1.5 w-1.5 shrink-0 rounded-full bg-navy-900" />
-                    {b}
-                  </li>
-                ))}
-              </ul>
               <div className="mt-8">
                 <a href="#" className={btnOutline}>
-                  Book a call <ChevronRight />
+                  Join the waitlist <ChevronRight />
                 </a>
               </div>
             </div>

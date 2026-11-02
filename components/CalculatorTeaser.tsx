@@ -4,7 +4,9 @@ import { useId, useMemo, useState } from "react";
 import Container from "./Container";
 import SectionHeading from "./SectionHeading";
 
-const FEE = 0.0075;
+const MONTHLY_FEE = 19;
+const FIRST_MONTH_FEE = MONTHLY_FEE / 2;
+const MAX_YEARS = 5;
 const SCENARIOS = {
   cautious: { label: "Cautious", rate: 0.03 },
   balanced: { label: "Balanced", rate: 0.05 },
@@ -15,10 +17,15 @@ type ScenarioKey = keyof typeof SCENARIOS;
 const fmt = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
 
 function project(initial: number, monthly: number, years: number, annualRate: number) {
-  const r = (annualRate - FEE) / 12;
+  const r = annualRate / 12;
   let value = initial;
-  for (let m = 0; m < years * 12; m++) value = value * (1 + r) + monthly;
-  return value;
+  let fees = 0;
+  for (let m = 0; m < years * 12; m++) {
+    const fee = m === 0 ? FIRST_MONTH_FEE : MONTHLY_FEE;
+    fees += fee;
+    value = Math.max(0, value * (1 + r) + monthly - fee);
+  }
+  return { value, fees };
 }
 
 function NumberField({
@@ -65,14 +72,13 @@ function NumberField({
 export default function CalculatorTeaser() {
   const [initial, setInitial] = useState(1000);
   const [monthly, setMonthly] = useState(100);
-  const [years, setYears] = useState(10);
+  const [years, setYears] = useState(MAX_YEARS);
   const [scenario, setScenario] = useState<ScenarioKey>("balanced");
 
-  const { total, paidIn } = useMemo(
-    () => ({
-      total: project(initial, monthly, years, SCENARIOS[scenario].rate),
-      paidIn: initial + monthly * years * 12,
-    }),
+  const { total, fees, paidIn } = useMemo(() => {
+    const { value, fees } = project(initial, monthly, years, SCENARIOS[scenario].rate);
+    return { total: value, fees, paidIn: initial + monthly * years * 12 };
+  },
     [initial, monthly, years, scenario],
   );
 
@@ -87,8 +93,8 @@ export default function CalculatorTeaser() {
               over time.
             </p>
             <p className="mt-4 leading-relaxed text-muted">
-              Results are shown net of the 0.75% Harbor management fee. Hyperliquid trading and network costs
-              are not included.
+              Results are shown after the $19 monthly Harbor fee, with 50% off your first month. Hyperliquid
+              trading and network costs are not included.
             </p>
           </div>
 
@@ -96,7 +102,7 @@ export default function CalculatorTeaser() {
             <div className="space-y-6">
               <NumberField label="Initial deposit" prefix="$" value={initial} onChange={setInitial} min={50} max={25000} step={50} />
               <NumberField label="Monthly deposit" prefix="$" value={monthly} onChange={setMonthly} min={0} max={2000} step={25} />
-              <NumberField label="Investment horizon (years)" value={years} onChange={setYears} min={1} max={30} step={1} />
+              <NumberField label="Investment horizon (years)" value={years} onChange={setYears} min={1} max={MAX_YEARS} step={1} />
               <fieldset>
                 <legend className="text-sm text-muted">Market scenario</legend>
                 <div className="mt-2 grid grid-cols-3 border border-line">
@@ -123,10 +129,11 @@ export default function CalculatorTeaser() {
             </div>
 
             <div className="mt-8 border-t border-line pt-6" aria-live="polite">
-              <p className="text-sm text-muted">Estimated value after {years} years</p>
+              <p className="text-sm text-muted">Estimated value after {years} {years === 1 ? "year" : "years"}</p>
               <p className="mt-1 text-[2.25rem] font-light text-navy-900">{fmt.format(total)}</p>
               <p className="text-sm text-muted">
-                Total deposited: <span className="text-ink">{fmt.format(paidIn)}</span> · Assumed return{" "}
+                Total deposited: <span className="text-ink">{fmt.format(paidIn)}</span> · Harbor fees:{" "}
+                <span className="text-ink">{fmt.format(fees)}</span> · Assumed return{" "}
                 {(SCENARIOS[scenario].rate * 100).toFixed(0)}% p.a.
               </p>
             </div>
