@@ -3,17 +3,6 @@ import SectionHeading from "./SectionHeading";
 import { Document } from "./icons";
 import { textLink } from "./ui";
 
-const POINTS = [
-  {
-    lead: "A tailored list of investment funds",
-    rest: "– actively and passively managed funds, selected and monitored by Harbor",
-  },
-  {
-    lead: "Simple flat fee",
-    rest: "– $19 per month, whatever your balance, plus Hyperliquid trading and network costs",
-  },
-];
-
 export default function HowItWorks() {
   return (
     <section aria-labelledby="how-title" className="py-20 sm:py-24">
@@ -24,17 +13,11 @@ export default function HowItWorks() {
             Get a portfolio built on our research, featuring a tailored list of actively and passively managed
             investment funds that trade transparently on Hyperliquid.
           </p>
-          <ul className="mt-10 space-y-4 text-[1.0625rem]">
-            {POINTS.map((p) => (
-              <li key={p.lead} className="flex gap-4">
-                <span aria-hidden className="mt-[0.6em] h-1.5 w-1.5 shrink-0 rounded-full bg-navy-900" />
-                <span>
-                  <strong className="font-semibold text-navy-900">{p.lead}</strong> {p.rest}
-                </span>
-              </li>
-            ))}
-          </ul>
-          <p className="mt-10 leading-relaxed text-muted">
+          <p className="mt-10 text-[1.0625rem]">
+            <strong className="font-semibold text-navy-900">Simple flat fee</strong> – $19 per month, whatever your
+            balance, plus Hyperliquid trading and network costs.
+          </p>
+          <p className="mt-2 leading-relaxed text-muted">
             Get 50% off your first month – just $9.50 – when you open your account.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:gap-10">
