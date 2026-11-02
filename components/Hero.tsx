@@ -94,7 +94,7 @@ export default function Hero() {
                 Managed investing on Hyperliquid, made easy
               </h1>
               <p className="mt-5 text-lg text-ink sm:text-[1.375rem]">
-                Invest in as many funds and ETFs as you like, starting at just $50.
+                Invest in a tailored selection of actively and passively managed investment funds.
               </p>
             </div>
             <OpenAccountButton className={`${btnPrimary} mt-9`}>

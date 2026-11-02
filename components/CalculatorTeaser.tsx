@@ -8,24 +8,22 @@ const MONTHLY_FEE = 19;
 const FIRST_MONTH_FEE = MONTHLY_FEE / 2;
 const MAX_YEARS = 5;
 const SCENARIOS = {
-  cautious: { label: "Cautious", rate: 0.03 },
-  balanced: { label: "Balanced", rate: 0.05 },
-  growth: { label: "Growth", rate: 0.07 },
+  cautious: { label: "Cautious", rate: 0.05 },
+  balanced: { label: "Balanced", rate: 0.075 },
+  growth: { label: "Growth", rate: 0.1 },
 } as const;
 type ScenarioKey = keyof typeof SCENARIOS;
 
 const fmt = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
 
-function project(initial: number, monthly: number, years: number, annualRate: number) {
+function project(initial: number, years: number, annualRate: number) {
   const r = annualRate / 12;
   let value = initial;
-  let fees = 0;
   for (let m = 0; m < years * 12; m++) {
     const fee = m === 0 ? FIRST_MONTH_FEE : MONTHLY_FEE;
-    fees += fee;
-    value = Math.max(0, value * (1 + r) + monthly - fee);
+    value = Math.max(0, value * (1 + r) - fee);
   }
-  return { value, fees };
+  return value;
 }
 
 function NumberField({
@@ -70,16 +68,13 @@ function NumberField({
 }
 
 export default function CalculatorTeaser() {
-  const [initial, setInitial] = useState(1000);
-  const [monthly, setMonthly] = useState(100);
+  const [initial, setInitial] = useState(10000);
   const [years, setYears] = useState(MAX_YEARS);
   const [scenario, setScenario] = useState<ScenarioKey>("balanced");
 
-  const { total, fees, paidIn } = useMemo(() => {
-    const { value, fees } = project(initial, monthly, years, SCENARIOS[scenario].rate);
-    return { total: value, fees, paidIn: initial + monthly * years * 12 };
-  },
-    [initial, monthly, years, scenario],
+  const total = useMemo(
+    () => project(initial, years, SCENARIOS[scenario].rate),
+    [initial, years, scenario],
   );
 
   return (
@@ -89,7 +84,7 @@ export default function CalculatorTeaser() {
           <div>
             <SectionHeading id="calc-title">What could your investment be worth?</SectionHeading>
             <p className="text-lg leading-relaxed text-ink">
-              Try different amounts, time horizons and market scenarios to see how regular investing can add up
+              Try different amounts, time horizons and market scenarios to see how your investment could grow
               over time.
             </p>
             <p className="mt-4 leading-relaxed text-muted">
@@ -100,8 +95,7 @@ export default function CalculatorTeaser() {
 
           <div className="bg-white p-6 shadow-[0_1px_0_var(--color-line)] sm:p-8">
             <div className="space-y-6">
-              <NumberField label="Initial deposit" prefix="$" value={initial} onChange={setInitial} min={50} max={25000} step={50} />
-              <NumberField label="Monthly deposit" prefix="$" value={monthly} onChange={setMonthly} min={0} max={2000} step={25} />
+              <NumberField label="Investment amount" prefix="$" value={initial} onChange={setInitial} min={1000} max={100000} step={1000} />
               <NumberField label="Investment horizon (years)" value={years} onChange={setYears} min={1} max={MAX_YEARS} step={1} />
               <fieldset>
                 <legend className="text-sm text-muted">Market scenario</legend>
@@ -132,9 +126,8 @@ export default function CalculatorTeaser() {
               <p className="text-sm text-muted">Estimated value after {years} {years === 1 ? "year" : "years"}</p>
               <p className="mt-1 text-[2.25rem] font-light text-navy-900">{fmt.format(total)}</p>
               <p className="text-sm text-muted">
-                Total deposited: <span className="text-ink">{fmt.format(paidIn)}</span> · Harbor fees:{" "}
-                <span className="text-ink">{fmt.format(fees)}</span> · Assumed return{" "}
-                {(SCENARIOS[scenario].rate * 100).toFixed(0)}% p.a.
+                Invested: <span className="text-ink">{fmt.format(initial)}</span> · Assumed return{" "}
+                {SCENARIOS[scenario].rate * 100}% p.a.
               </p>
             </div>
             <p className="mt-6 text-xs leading-relaxed text-muted">
