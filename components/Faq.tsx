@@ -8,7 +8,7 @@ import { ChevronDown } from "./icons";
 const COMPARISON = [
   ["Availability", "Available now", "Coming soon", "Coming soon"],
   ["Who decides", "Harbor manages your portfolio", "You place every trade", "AI assistants build to your specifications"],
-  ["Funds and ETFs", "No limit", "To be announced", "To be announced"],
+  ["Investments", "Tailored list of active and passive funds", "To be announced", "To be announced"],
   ["Fee", "$19 per month", "To be announced", "To be announced"],
 ];
 
@@ -24,10 +24,6 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
         </p>
       </>
     ),
-  },
-  {
-    q: "Is there a minimum investment?",
-    a: <p>You can start from $50. Recurring plans can be set from $25 per deposit. There is no limit on how many funds and ETFs you hold.</p>,
   },
   {
     q: "What does Harbor cost?",
@@ -84,11 +80,11 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
     ),
   },
   {
-    q: "Can I change or stop my plan?",
+    q: "Can I withdraw or close my account?",
     a: (
       <p>
-        Yes. You can change your deposit amount, switch funds and ETFs, pause or cancel your recurring plan, or
-        close your account at any time from your dashboard, with no exit fees.
+        Yes. You can withdraw to your wallet or close your account at any time from your dashboard, with no exit
+        fees.
       </p>
     ),
   },

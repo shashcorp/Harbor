@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "sw
 export const metadata: Metadata = {
   title: "Harbor — Managed investing on Hyperliquid",
   description:
-    "Open an account, invest in as many funds and ETFs as you like, and let Harbor manage the rest. Start from $50 for a flat $19 per month.",
+    "Open an account and invest in a tailored selection of actively and passively managed investment funds on Hyperliquid, for a flat $19 per month.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

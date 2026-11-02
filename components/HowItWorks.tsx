@@ -4,8 +4,10 @@ import { Document } from "./icons";
 import { textLink } from "./ui";
 
 const POINTS = [
-  { lead: "Invest in as many funds and ETFs as you like", rest: "– there is no limit" },
-  { lead: "Make flexible deposits or set up a recurring plan", rest: "– you decide how often you invest" },
+  {
+    lead: "A tailored list of investment funds",
+    rest: "– actively and passively managed funds, selected and monitored by Harbor",
+  },
   {
     lead: "Simple flat fee",
     rest: "– $19 per month, whatever your balance, plus Hyperliquid trading and network costs",
@@ -19,8 +21,8 @@ export default function HowItWorks() {
         <div className="max-w-[880px]">
           <SectionHeading id="how-title">How Harbor Invest works</SectionHeading>
           <p className="text-xl font-light leading-relaxed text-ink sm:text-[1.6rem]">
-            Get a portfolio built on our research, featuring carefully selected and broadly diversified funds and
-            ETFs that trade transparently on Hyperliquid.
+            Get a portfolio built on our research, featuring a tailored list of actively and passively managed
+            investment funds that trade transparently on Hyperliquid.
           </p>
           <ul className="mt-10 space-y-4 text-[1.0625rem]">
             {POINTS.map((p) => (
@@ -40,7 +42,7 @@ export default function HowItWorks() {
               Harbor Invest factsheet <Document className="h-5 w-5 text-accent" />
             </a>
             <a href="#" className={textLink}>
-              Fund and ETF overview <Document className="h-5 w-5 text-accent" />
+              Fund overview <Document className="h-5 w-5 text-accent" />
             </a>
           </div>
         </div>
