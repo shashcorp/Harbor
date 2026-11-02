@@ -46,3 +46,31 @@ body {
     animation-duration: 0.01ms !important;
   }
 }
+
+/* Range slider: thin track (filled part set inline), large white thumb */
+.harbor-range {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 2px;
+  background: #d4d4d4;
+  cursor: pointer;
+}
+.harbor-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  background: #fff;
+  border: 1px solid #8a8f96;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+.harbor-range::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  background: #fff;
+  border: 1px solid #8a8f96;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
