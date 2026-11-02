@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Container from "./Container";
 import Logo from "./Logo";
-import Link from "next/link";
+import HeaderAccount from "./HeaderAccount";
 import { Close, Help, Menu, Shield } from "./icons";
 
 const NAV = [
@@ -68,15 +68,7 @@ export default function Header() {
             >
               <Help /> Help and contact
             </a>
-            <Link
-              href="/login"
-              className="hidden px-2 text-sm font-semibold text-navy-900 transition-colors hover:text-accent sm:inline"
-            >
-              Log in
-            </Link>
-            <Link href="/signup" className="inline-flex items-center bg-accent px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-accent-600">
-              Open account
-            </Link>
+            <HeaderAccount />
             <button
               type="button"
               className="-mr-2 p-2 text-navy-900 md:hidden"
