@@ -1,11 +1,44 @@
+import Link from "next/link";
 import Container from "./Container";
 import Logo from "./Logo";
 
-const COLUMNS = [
-  { title: "Products", links: ["Harbor Invest", "Harbor Vaults (soon)", "Harbor Private (soon)", "Fees"] },
-  { title: "Learn", links: ["Getting started", "Wallet setup", "Research", "Glossary"] },
-  { title: "Company", links: ["About Harbor", "Careers", "Press", "Contact"] },
-  { title: "Legal", links: ["Terms of use", "Privacy", "Risk disclosure", "Cookie settings"] },
+type FooterLink = { label: string; href?: string };
+
+const COLUMNS: { title: string; links: FooterLink[] }[] = [
+  {
+    title: "Products",
+    links: [
+      { label: "Harbor Invest", href: "/" },
+      { label: "Harbor Vaults (soon)", href: "/#vaults" },
+      { label: "Harbor Private (soon)", href: "/#private" },
+      { label: "Fees", href: "/invest/factsheet#fees" },
+    ],
+  },
+  {
+    title: "Learn",
+    links: [
+      { label: "Getting started", href: "/signup" },
+      { label: "All funds", href: "/funds" },
+      { label: "Product factsheet", href: "/invest/factsheet" },
+      { label: "FAQ", href: "/#faq" },
+    ],
+  },
+  {
+    title: "Account",
+    links: [
+      { label: "Open account", href: "/signup" },
+      { label: "Log in", href: "/login" },
+      { label: "My account", href: "/account" },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      { label: "Risk disclosure", href: "/invest/factsheet#risks" },
+      { label: "Terms of use (coming soon)" },
+      { label: "Privacy policy (coming soon)" },
+    ],
+  },
 ];
 
 export default function Footer() {
@@ -24,8 +57,14 @@ export default function Footer() {
               <h2 className="text-sm font-semibold text-navy-900">{col.title}</h2>
               <ul className="mt-4 space-y-2.5 text-sm text-muted">
                 {col.links.map((l) => (
-                  <li key={l}>
-                    <a href="#" className="transition-colors hover:text-navy-900">{l}</a>
+                  <li key={l.label}>
+                    {l.href ? (
+                      <Link href={l.href} className="transition-colors hover:text-navy-900">
+                        {l.label}
+                      </Link>
+                    ) : (
+                      <span>{l.label}</span>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -36,8 +75,7 @@ export default function Footer() {
           <p>
             Risk warning: Investing in digital assets involves significant risk, including the possible loss of
             all capital invested. Past performance is not a reliable indicator of future results. Harbor does not
-            provide investment, tax or legal advice. Availability depends on
-            your jurisdiction.
+            provide investment, tax or legal advice. Availability depends on your jurisdiction.
           </p>
           <p className="mt-4">© {new Date().getFullYear()} Harbor. All rights reserved.</p>
         </div>
