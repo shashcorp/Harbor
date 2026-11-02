@@ -154,7 +154,8 @@ export default function RiskWizard({ initialAnswers }: { initialAnswers?: Answer
       return saveAndShowResult();
     }
     if (current.kind === "result") {
-      router.push("/account");
+      // Go straight on to step 2: find the right Harbor funds for this profile.
+      router.push("/account/funds");
       router.refresh();
       return;
     }
