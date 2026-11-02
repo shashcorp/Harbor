@@ -269,6 +269,7 @@ export default async function FundPage({ params }: { params: Promise<Params> }) 
                 [
                   ["Factsheet", "factsheet"],
                   ["Simplified prospectus", "prospectus"],
+                  ["Key information document", "key-information"],
                 ] as const
               ).map(([doc, slug]) => (
                 <li key={doc}>
