@@ -6,11 +6,10 @@ import SectionHeading from "./SectionHeading";
 import { ChevronDown } from "./icons";
 
 const COMPARISON = [
-  ["Who decides", "Harbor manages your baskets", "You place every trade"],
-  ["Minimum to start", "$50", "$500"],
-  ["Fee", "0.75% p.a. management fee", "Per-trade fee, no management fee"],
-  ["Rebalancing", "Automatic", "Manual"],
-  ["Best for", "Long-term, hands-off investing", "Active, experienced traders"],
+  ["Availability", "Available now", "Coming soon", "Coming soon"],
+  ["Who decides", "Harbor manages your portfolio", "You place every trade", "AI assistants build to your specifications"],
+  ["Funds and ETFs", "No limit", "To be announced", "To be announced"],
+  ["Fee", "$19 per month", "To be announced", "To be announced"],
 ];
 
 const FAQS: { q: string; a: React.ReactNode }[] = [
@@ -18,7 +17,7 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
     q: "Who is Harbor suitable for?",
     a: (
       <>
-        <p>Harbor is ideal if you want to invest on-chain without managing every trade yourself.</p>
+        <p>Harbor is built for individual investors who want to invest on-chain without managing every trade themselves.</p>
         <p>
           You need to be at least 18, live in a supported jurisdiction and hold a self-custody wallet compatible
           with Hyperliquid. New to wallets? Our Learn section walks you through setup step by step.
@@ -28,15 +27,15 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
   },
   {
     q: "Is there a minimum investment?",
-    a: <p>You can start from $50. Recurring plans can be set from $25 per deposit.</p>,
+    a: <p>You can start from $50. Recurring plans can be set from $25 per deposit. There is no limit on how many funds and ETFs you hold.</p>,
   },
   {
     q: "What does Harbor cost?",
     a: (
       <p>
-        Harbor charges a transparent management fee of 0.75% per year, calculated daily on your invested balance.
-        Hyperliquid trading fees and network costs are passed through at cost and shown before you confirm.
-        Figures shown are placeholders until the final fee schedule is published.
+        Harbor Invest costs a flat $19 per month, whatever your balance, and your first month is 50% off ($9.50).
+        There is no percentage-based fee. Hyperliquid trading fees and network costs are passed through at cost
+        and shown before you confirm.
       </p>
     ),
   },
@@ -44,33 +43,38 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
     q: "Who holds my assets?",
     a: (
       <p>
-        You do. Harbor never takes custody of your keys. Positions are held in a vault account linked to your
+        You do. Harbor never takes custody of your keys. Positions are held in an account linked to your
         wallet, and you can withdraw at any time.
       </p>
     ),
   },
   {
-    q: "What is the difference between Harbor and Harbor Vaults?",
+    q: "What are Harbor Vaults and Harbor Private?",
     a: (
       <>
-        <p>Both run on Hyperliquid. The main difference is who makes the investment decisions.</p>
+        <p>
+          Two upcoming Harbor products. Harbor Invest is available today; Vaults and Private are coming soon. The
+          main difference is who makes the investment decisions.
+        </p>
         <div className="mt-4 overflow-x-auto">
-          <table className="w-full min-w-[520px] border-collapse text-left text-sm">
+          <table className="w-full min-w-[640px] border-collapse text-left text-sm">
             <thead>
               <tr className="border-b-2 border-navy-900">
                 <th scope="col" className="py-3 pr-4 font-semibold text-navy-900">
                   <span className="sr-only">Feature</span>
                 </th>
-                <th scope="col" className="py-3 pr-4 font-semibold text-navy-900">Harbor</th>
-                <th scope="col" className="py-3 font-semibold text-navy-900">Harbor Vaults</th>
+                <th scope="col" className="py-3 pr-4 font-semibold text-navy-900">Harbor Invest</th>
+                <th scope="col" className="py-3 pr-4 font-semibold text-navy-900">Harbor Vaults</th>
+                <th scope="col" className="py-3 font-semibold text-navy-900">Harbor Private</th>
               </tr>
             </thead>
             <tbody>
-              {COMPARISON.map(([label, a, b]) => (
+              {COMPARISON.map(([label, ...cells]) => (
                 <tr key={label} className="border-b border-line">
                   <th scope="row" className="py-3 pr-4 font-medium text-navy-900">{label}</th>
-                  <td className="py-3 pr-4">{a}</td>
-                  <td className="py-3">{b}</td>
+                  {cells.map((c, i) => (
+                    <td key={i} className="py-3 pr-4">{c}</td>
+                  ))}
                 </tr>
               ))}
             </tbody>
@@ -83,8 +87,8 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
     q: "Can I change or stop my plan?",
     a: (
       <p>
-        Yes. You can change your deposit amount, switch baskets, pause or cancel your recurring plan at any time
-        from your dashboard, with no exit fees.
+        Yes. You can change your deposit amount, switch funds and ETFs, pause or cancel your recurring plan, or
+        close your account at any time from your dashboard, with no exit fees.
       </p>
     ),
   },

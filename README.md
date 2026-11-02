@@ -1,6 +1,6 @@
 # Harbor — landing page
 
-Marketing landing page for Harbor, managed investing on Hyperliquid. Built with Next.js (App Router), TypeScript and Tailwind CSS v4. Static UI only — no backend; wallet connect and the returns calculator are client-side previews.
+Marketing landing page for Harbor, managed investing on Hyperliquid. Built with Next.js (App Router), TypeScript and Tailwind CSS v4. Static UI only — no backend; the "Open account" flow and the returns calculator are client-side previews.
 
 ## Run locally
 
@@ -24,4 +24,4 @@ npm start
 - `components/` — one file per section (Header, Hero, HowItWorks, Benefits, CalculatorTeaser, DiscoverMore, Faq, NeedMoreAnswers, Footer, StickyCta) plus shared UI (WalletModal, icons, Logo)
 - `refs/ubs-key4/` — layout reference screenshots and outline (structure only; no third-party branding is used in the UI)
 
-Fee figures on the page are placeholders.
+Pricing shown on the page: flat $19/month, 50% off the first month. Harbor Invest is the live product; Harbor Vaults and Harbor Private are shown as coming soon.

@@ -2,7 +2,7 @@ import Container from "./Container";
 import Logo from "./Logo";
 
 const COLUMNS = [
-  { title: "Invest", links: ["Managed baskets", "Harbor Vaults", "Harbor Private", "Fees"] },
+  { title: "Products", links: ["Harbor Invest", "Harbor Vaults (soon)", "Harbor Private (soon)", "Fees"] },
   { title: "Learn", links: ["Getting started", "Wallet setup", "Research", "Glossary"] },
   { title: "Company", links: ["About Harbor", "Careers", "Press", "Contact"] },
   { title: "Legal", links: ["Terms of use", "Privacy", "Risk disclosure", "Cookie settings"] },
@@ -36,7 +36,7 @@ export default function Footer() {
           <p>
             Risk warning: Investing in digital assets involves significant risk, including the possible loss of
             all capital invested. Past performance is not a reliable indicator of future results. Harbor does not
-            provide investment, tax or legal advice. Fee figures shown are placeholders. Availability depends on
+            provide investment, tax or legal advice. Availability depends on
             your jurisdiction.
           </p>
           <p className="mt-4">© {new Date().getFullYear()} Harbor. All rights reserved.</p>

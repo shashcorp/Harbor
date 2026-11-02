@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ConnectWalletButton } from "./WalletModal";
+import { OpenAccountButton } from "./WalletModal";
 import { ChevronRight, Close } from "./icons";
 import { btnPrimary } from "./ui";
 
@@ -36,10 +36,10 @@ export default function StickyCta() {
       >
         <div className="flex items-center justify-between gap-4">
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
-            <ConnectWalletButton className={btnPrimary}>
-              Connect wallet <ChevronRight />
-            </ConnectWalletButton>
-            <span className="hidden text-sm text-muted md:inline">Start from $50 · Cancel any time</span>
+            <OpenAccountButton className={btnPrimary}>
+              Open account <ChevronRight />
+            </OpenAccountButton>
+            <span className="hidden text-sm text-muted md:inline">$19/month · First month 50% off · Cancel any time</span>
           </div>
           <button
             type="button"

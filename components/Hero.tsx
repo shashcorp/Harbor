@@ -1,5 +1,5 @@
 import Container from "./Container";
-import { ConnectWalletButton } from "./WalletModal";
+import { OpenAccountButton } from "./WalletModal";
 import { ChevronRight } from "./icons";
 import { btnPrimary } from "./ui";
 
@@ -94,12 +94,12 @@ export default function Hero() {
                 Managed investing on Hyperliquid, made easy
               </h1>
               <p className="mt-5 text-lg text-ink sm:text-[1.375rem]">
-                Connect your wallet and invest in curated baskets starting at just $50.
+                Invest in as many funds and ETFs as you like, starting at just $50.
               </p>
             </div>
-            <ConnectWalletButton className={`${btnPrimary} mt-9`}>
-              Connect wallet <ChevronRight />
-            </ConnectWalletButton>
+            <OpenAccountButton className={`${btnPrimary} mt-9`}>
+              Open account <ChevronRight />
+            </OpenAccountButton>
           </div>
         </div>
       </Container>
