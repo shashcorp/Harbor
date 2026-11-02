@@ -16,50 +16,61 @@ export const QUESTIONS: Question[] = [
     ],
     why: "The more we know about your knowledge and experience with investment funds, the better we can suggest funds that suit you. Investing in funds always involves risk, and we want to make sure you understand both the risks and the characteristics of each fund. For every fund we provide a factsheet, a simplified prospectus and a key information document to support your decision.",
   },
-  {
-    id: "horizon",
-    section: 2,
-    question: "When might you need the money you invest?",
-    options: [
-      { label: "Within 1 year", score: 0 },
-      { label: "In 1 to 3 years", score: 1 },
-      { label: "In 3 to 5 years", score: 2 },
-    ],
-    why: "The longer you can stay invested, the more time your investment has to recover from falls in value. A short horizon points to more defensive funds.",
-  },
-  {
-    id: "tolerance",
-    section: 2,
-    question: "If your investment fell by 20% in one month, what would you do?",
-    options: [
-      { label: "Sell everything", score: 0 },
-      { label: "Sell some of it", score: 1 },
-      { label: "Do nothing and wait", score: 2 },
-      { label: "Invest more", score: 3 },
-    ],
-    why: "Every Harbor fund can lose value, and some can fall sharply. How you would react to a loss is one of the best indicators of the level of risk you are comfortable with.",
-  },
 ];
 
 export type Answers = Record<string, number>;
 
-export type RiskProfile = { risk: number; label: string; description: string };
+/** Investment horizon is chosen on a slider, from 1 to 5 years. */
+export const HORIZON_MIN = 1;
+export const HORIZON_MAX = 5;
+export const HORIZON_DEFAULT = 2;
 
-const PROFILES: Record<number, Omit<RiskProfile, "risk">> = {
-  2: { label: "Defensive", description: "You put preserving your capital first and accept only small swings in value." },
-  3: { label: "Balanced", description: "You want some growth but prefer a portfolio anchored in cash and broad indices." },
-  4: { label: "Growth", description: "You accept noticeable swings in value in return for higher potential growth." },
-  5: { label: "Aggressive", description: "You are comfortable with large swings and aim for maximum long-term growth." },
-  6: { label: "High risk", description: "You accept sharp falls in value and can invest in concentrated crypto funds." },
-  7: { label: "Very high risk", description: "You accept very large losses and can invest in single-theme and satellite funds." },
+/**
+ * Risk tolerance levels chosen on a slider. Returns are the illustrative assumptions used across the site
+ * (Low 5%, Medium 7.5%, High 10%); volatility and severe-market falls are estimates, not history.
+ */
+export const TOLERANCE_LEVELS = [
+  { label: "Very low", hint: "Very low risk suits money you may need soon or cannot afford to see fall.", rate: 0.03, vol: 0.04, fall: 0.08, holding: 1, profile: 2 },
+  { label: "Low", hint: "Low risk is the way to go if you might want to withdraw your money sooner.", rate: 0.05, vol: 0.08, fall: 0.15, holding: 2, profile: 3 },
+  { label: "Moderate", hint: "A moderate level balances stability and growth over a few years.", rate: 0.0625, vol: 0.11, fall: 0.22, holding: 3, profile: 3 },
+  { label: "Medium", hint: "Medium risk accepts noticeable swings in return for more growth potential.", rate: 0.075, vol: 0.15, fall: 0.3, holding: 4, profile: 4 },
+  { label: "Above average", hint: "Above-average risk means large swings; you should be able to stay invested through them.", rate: 0.0875, vol: 0.22, fall: 0.4, holding: 5, profile: 5 },
+  { label: "High", hint: "High risk can mean very sharp falls; only choose it for money you can leave invested.", rate: 0.1, vol: 0.3, fall: 0.55, holding: 5, profile: 6 },
+] as const;
+export const TOLERANCE_DEFAULT = 3;
+
+/** True when the chosen holding period is shorter than the risk level recommends. */
+export function horizonMismatch(answers: Answers) {
+  const level = TOLERANCE_LEVELS[answers.tolerance ?? TOLERANCE_DEFAULT];
+  return (answers.horizonYears ?? HORIZON_DEFAULT) < level.holding;
+}
+
+export type RiskProfile = {
+  /** Index into TOLERANCE_LEVELS (0 = Very low … 5 = High). */
+  level: number;
+  label: string;
+  description: string;
+  /** Highest fund risk indicator (1–7) that fits this profile. */
+  risk: number;
 };
 
+const DESCRIPTIONS = [
+  "You want to preserve your assets and accept only very small fluctuations in value.",
+  "You put stability first and accept small fluctuations in value for modest growth.",
+  "You aim for steady growth over a few years while accepting moderate fluctuations in value.",
+  "You strive for appreciation of your assets in the long term while accepting medium volatility of asset value.",
+  "You aim for strong growth and accept large fluctuations in value along the way.",
+  "You aim for maximum growth and accept very large fluctuations, including sharp temporary losses.",
+];
+
+/** Highest level for investors who are not yet familiar with funds. */
+const UNFAMILIAR_CAP = 3;
+
 export function computeProfile(answers: Answers): RiskProfile {
-  const total = QUESTIONS.reduce((sum, q) => sum + (q.options[answers[q.id]]?.score ?? 0), 0); // 0..6
-  let risk = [2, 2, 3, 4, 4, 5, 6][total] ?? 2;
-  // Investors who are not yet familiar with funds are capped at a growth profile.
-  if (answers.experience === 0) risk = Math.min(risk, 4);
-  return { risk, ...PROFILES[risk] };
+  let level = answers.tolerance ?? TOLERANCE_DEFAULT;
+  if (answers.experience === 0) level = Math.min(level, UNFAMILIAR_CAP);
+  const t = TOLERANCE_LEVELS[level];
+  return { level, label: t.label, description: DESCRIPTIONS[level], risk: t.profile };
 }
 
 /** The matching multi-asset fund first, then the funds closest to the profile's risk level. */

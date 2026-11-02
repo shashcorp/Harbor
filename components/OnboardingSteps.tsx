@@ -22,7 +22,7 @@ export function Stepper({ current }: { current: number }) {
                 active
                   ? "border-[3px] border-navy-900 bg-white"
                   : done
-                    ? "bg-accent text-white"
+                    ? "bg-navy-900 text-white"
                     : "bg-[#d4d4d4]"
               }`}
             >
