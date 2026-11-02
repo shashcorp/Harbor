@@ -18,7 +18,7 @@ export default function HowItWorks() {
             balance, plus Hyperliquid trading and network costs.
           </p>
           <p className="mt-2 leading-relaxed text-muted">
-            Get 50% off your first month – just $9.50 – when you open your account.
+            Get 50% off your first month when you open your account.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:gap-10">
             <a href="#" className={textLink}>

@@ -1,5 +1,5 @@
 import Container from "./Container";
-import { OpenAccountButton } from "./WalletModal";
+import Link from "next/link";
 import { ChevronRight } from "./icons";
 import { btnPrimary } from "./ui";
 
@@ -97,9 +97,9 @@ export default function Hero() {
                 Invest in a tailored selection of actively and passively managed investment funds.
               </p>
             </div>
-            <OpenAccountButton className={`${btnPrimary} mt-9`}>
+            <Link href="/signup" className={`${btnPrimary} mt-9`}>
               Open account <ChevronRight />
-            </OpenAccountButton>
+            </Link>
           </div>
         </div>
       </Container>
